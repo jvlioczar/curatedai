@@ -10,6 +10,7 @@ from content import UI, CONTACT, COUNTRIES_PT
 
 SITE = "https://curatedai.biblioverse.org"
 BUILT = datetime.date.today().isoformat()
+import rcssmin, rjsmin
 GSAP = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
 SCROLLTRIGGER = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
 LENIS = "https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"
@@ -87,7 +88,7 @@ class Site:
             for c in CATEGORIES)
         nav = [(self.href(depth, self.p["home"]), t["nav"]["home"], "H"), (self.href(depth, self.p["home"]) + "#all", t["nav"]["all"], "A"), (self.href(depth, self.p["about"]), t["nav"]["about"], "?")]
         navh = "".join(f'<a href="{u}" title="{e(n)}"><span>{e(n)}</span><b>{k}</b></a>' for u, n, k in nav)
-        return (f'<svg class="goo-defs" width="0" height="0" aria-hidden="true"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10" result="g"/><feComposite in="SourceGraphic" in2="g" operator="atop"/></filter></defs></svg>'
+        return (f'<svg class="goo-defs" width="0" height="0" aria-hidden="true"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/><feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10" result="g"/><feComposite in="SourceGraphic" in2="g" operator="atop"/></filter></defs></svg>'
                 f'<aside class="rail" id="rail" aria-label="{e(t["menu"])}">'
                 f'<div class="rail-goo" aria-hidden="true"><i class="rg-body"></i><i class="rg-hl" id="railHl"></i><i class="rg-knob"></i></div>'
                 f'<button class="rail-toggle" id="railToggle" type="button" aria-expanded="true" aria-controls="rail" aria-label="{e(t["collapse"])}" data-collapse="{e(t["collapse"])}" data-expand="{e(t["expand"])}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>'
@@ -164,11 +165,11 @@ class Site:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
-<link rel="stylesheet" href="{assets}assets/style.css">
+<link rel="stylesheet" href="{assets}assets/style.min.css">
 <script src="{GSAP}" defer></script>
 <script src="{SCROLLTRIGGER}" defer></script>
 <script src="{LENIS}" defer></script>
-<script src="{assets}assets/app.js" defer></script>
+<script src="{assets}assets/app.min.js" defer></script>
 <script src="https://biblioverse.org/superbar.js" defer></script>
 </head>
 <body class="{'home' if home else 'inner'}">
@@ -176,7 +177,7 @@ class Site:
 <nav id="bvbar" class="bvbar" data-current="curatedai" aria-label="BiblioVerse" style="position:relative;height:44px;z-index:9000;background:linear-gradient(90deg,#4f7cff,#7a5cff)"><a href="https://biblioverse.org" style="color:#fff;line-height:44px;padding:0 14px;font-weight:700;text-decoration:none;font-family:sans-serif">BiblioVerse</a></nav>
 <a class="skip" href="#main">{e(t['skip'])}</a>
 <div class="wipe" id="wipe" aria-hidden="true"><i class="w-top"></i><i class="w-bot"></i></div>
-<div class="cursor" id="cursor" aria-hidden="true"><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><i class="cur-dot"><b></b></i></div>
 <header class="top"><a class="logo" href="{self.href(depth, self.p['home'])}"><span class="logo-a">C<i>urated</i></span><span class="logo-b">.AI</span></a>
 <div class="top-right"><a class="lang" href="{other_href}" hreflang="{other_lang}" lang="{other_lang}">{t['switch']}</a>
 <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="rail"><span>{e(t['menu'])}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></header>
@@ -186,8 +187,8 @@ class Site:
 <main id="main" class="main">
 {crumb_html}
 {body}
-<footer class="foot"><div class="foot-in"><p>{e(t['footer'])}</p><p><a href="{self.href(depth, self.p['about'])}">{e(t['about_link'])}</a> · <a href="{self.href(depth, self.p['about'])}#privacy">{e(t['privacy_link'])}</a> · <a href="https://biblioverse.org">BiblioVerse</a> · © {BUILT[:4]}</p></div></footer>
 </main>
+<footer class="foot main-col"><div class="foot-in"><p>{e(t['footer'])}</p><p><a href="{self.href(depth, self.p['about'])}">{e(t['about_link'])}</a> · <a href="{self.href(depth, self.p['about'])}#privacy">{e(t['privacy_link'])}</a> · <a href="https://biblioverse.org">BiblioVerse</a> · © {BUILT[:4]} Julio Cesar Prava</p></div></footer>
 </body>
 </html>
 """
@@ -258,7 +259,7 @@ class Site:
 <h1 class="page-title"><span class="wi">{e(c[lang])}</span></h1>
 <p class="hero-lead reveal">{e(c['desc'][lang])}</p>
 </section>
-<section class="sec"><div class="grid">{cards}</div></section>
+<section class="sec"><h2 class="sr-only">{e(t['projectsHeading'])}</h2><div class="grid">{cards}</div></section>
 <section class="sec"><div class="sec-head reveal"><h2>{e(t['categories'])}</h2></div><div class="chips">{others}</div></section>
 """
         rel = f"{self.p['cat']}/{c['id']}.html"
@@ -346,7 +347,7 @@ def images():
             y += 104
         small = ImageFont.truetype(mono, 24)
         d.text((60, 566), f"CURATEDAI.BIBLIOVERSE.ORG   {len(PROJECTS)} {'PROJECTS' if lang == 'en' else 'PROJETOS'}", font=small, fill=grey)
-        im.save(os.path.join(ROOT, name), optimize=True)
+        im.convert("P", palette=Image.ADAPTIVE, colors=128).save(os.path.join(ROOT, name), optimize=True)
     os.makedirs(os.path.join(ROOT, "og"), exist_ok=True)
     from PIL import ImageColor
     for x in PROJECTS:
@@ -380,21 +381,33 @@ def images():
                 y += int(size * 1.02)
             d.text((60, 566), "CURATED.AI", font=ImageFont.truetype(heavy, 26), fill=ink)
             d.text((236, 570), ("made with AI, curated by humans" if lang == "en" else "feito com IA, curado por humanos").upper(), font=small, fill=grey)
-            im.save(os.path.join(ROOT, "og", f"{x['id']}-{lang}.png"), optimize=True)
-    for size, name in ((180, "apple-touch-icon.png"), (192, "icon-192.png"), (512, "icon-512.png")):
+            im.convert("P", palette=Image.ADAPTIVE, colors=128).save(os.path.join(ROOT, "og", f"{x['id']}-{lang}.png"), optimize=True)
+    for size, name in ((180, "apple-touch-icon.png"), (192, "icon-192.png"), (512, "icon-512.png"), (512, "icon-512-maskable.png")):
         im = Image.new("RGB", (size, size), ink)
         d = ImageDraw.Draw(im)
         r = size * .22
         d.ellipse([size / 2 - r, size / 2 - r, size / 2 + r, size / 2 + r], outline=bg, width=int(size * .09))
         q = size * .09
         d.rectangle([size * .64 - q, size * .22 - q, size * .64 + q, size * .22 + q], fill=acc)
-        im.save(os.path.join(ROOT, name), optimize=True)
+        if "maskable" in name:
+            inner = im.resize((int(size * .6), int(size * .6)))
+            im = Image.new("RGB", (size, size), ink)
+            im.paste(inner, ((size - inner.width) // 2, (size - inner.height) // 2))
+        im.convert("P", palette=Image.ADAPTIVE, colors=64).save(os.path.join(ROOT, name), optimize=True)
     Image.open(os.path.join(ROOT, "icon-192.png")).save(os.path.join(ROOT, "favicon.ico"), sizes=[(16, 16), (32, 32), (48, 48)])
     open(os.path.join(ROOT, "favicon.svg"), "w", encoding="utf8", newline="\n").write(
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#121214"/><circle cx="16" cy="16" r="7.5" fill="none" stroke="#ebebed" stroke-width="3"/><rect x="20" y="6" width="6" height="6" fill="#ef4b10"/></svg>\n')
 
 
+def minify():
+    css = open(os.path.join(ROOT, "assets", "style.css"), encoding="utf8").read()
+    open(os.path.join(ROOT, "assets", "style.min.css"), "w", encoding="utf8", newline="\n").write(rcssmin.cssmin(css))
+    js = open(os.path.join(ROOT, "assets", "app.js"), encoding="utf8").read()
+    open(os.path.join(ROOT, "assets", "app.min.js"), "w", encoding="utf8", newline="\n").write(rjsmin.jsmin(js))
+
+
 def main():
+    minify()
     for lang in ("en", "pt"):
         s = Site(lang)
         s.home()
@@ -406,7 +419,7 @@ def main():
     images()
     t = UI["en"]
     open(os.path.join(ROOT, "404.html"), "w", encoding="utf8", newline="\n").write(f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 · Curated AI</title><meta name="robots" content="noindex"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link href="{FONTS}" rel="stylesheet"><link rel="stylesheet" href="/assets/style.css"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 · Curated AI</title><meta name="robots" content="noindex"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link href="{FONTS}" rel="stylesheet"><link rel="stylesheet" href="/assets/style.min.css"></head>
 <body class="inner"><main class="main nf"><section class="page-hero"><p class="eyebrow">404</p><h1 class="page-title"><span class="wi">{e(t['notFound'])}</span></h1><p class="hero-lead">{e(t['notFoundText'])} <span lang="pt-BR">{e(UI['pt']['notFoundText'])}</span></p><p><a class="btn pri" href="/">{e(t['notFoundCta'])}</a> <a class="btn" href="/pt/" lang="pt-BR">{e(UI['pt']['notFoundCta'])}</a></p></section></main></body></html>
 """)
     urls = []
@@ -417,7 +430,7 @@ def main():
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf8", newline="\n").write("\n".join(sm) + "\n")
     open(os.path.join(ROOT, "robots.txt"), "w", newline="\n").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
     json.dump({"name": "Curated AI", "short_name": "Curated AI", "start_url": "/", "display": "standalone", "background_color": "#ebebed", "theme_color": "#ebebed",
-               "icons": [{"src": "/icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png"}]},
+               "icons": [{"src": "/icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png"}, {"src": "/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]},
               open(os.path.join(ROOT, "site.webmanifest"), "w", encoding="utf8"), indent=1)
     open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf8", newline="\n").write(
         f"# Curated AI\n\n> {UI['en']['tagline']}\n\n{UI['en']['homeDesc'].format(n=len(PROJECTS))}\n\n## Pages\n" +

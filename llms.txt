@@ -2,7 +2,7 @@
 
 > The greatest AI-assisted projects, curated by humans.
 
-A catalogue of 66 projects that show how to use AI well: useful, innovative, human-reviewed and free of AI slop. Films, music, games, websites, software, design, writing and more.
+A catalogue of projects that show how to use AI well: useful, innovative, human-reviewed and free of AI slop. Films, music, games, websites, software, design, writing and more.
 
 ## Pages
 - [Websites & web apps](https://curatedai.biblioverse.org/category/websites.html): Sites, landing pages, online tools and browser experiences where AI did real work and a human shaped the result.

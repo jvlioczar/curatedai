@@ -109,7 +109,7 @@
   var cur = document.getElementById("cursor");
   if (fine && !reduce && cur) {
     doc.classList.add("has-cursor");
-    var dots = Array.prototype.slice.call(cur.querySelectorAll(".tr"));
+    var dots = Array.prototype.slice.call(cur.querySelectorAll(".tr")), dot = cur.querySelector(".cur-dot");
     var pts = dots.map(function () { return { x: innerWidth / 2, y: innerHeight / 2 }; });
     var mx = innerWidth / 2, my = innerHeight / 2, visible = false;
     dots.forEach(function (d, i) {
@@ -119,8 +119,12 @@
     });
     window.addEventListener("pointermove", function (ev) {
       mx = ev.clientX; my = ev.clientY;
+      if (dot) dot.style.transform = "translate(" + mx + "px," + my + "px)";
       if (!visible) { visible = true; cur.style.opacity = "1"; }
     }, { passive: true });
+    document.addEventListener("pointerover", function (ev) { cur.classList.toggle("is-link", !!ev.target.closest("a, button, [data-cursor]")); });
+    window.addEventListener("pointerdown", function () { cur.classList.add("is-down"); });
+    window.addEventListener("pointerup", function () { cur.classList.remove("is-down"); });
     document.addEventListener("pointerleave", function () { cur.style.opacity = "0"; visible = false; });
     (function loop() {
       var tx = mx, ty = my;
