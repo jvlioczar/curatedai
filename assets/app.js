@@ -2,7 +2,7 @@
 (function () {
   "use strict";
   var doc = document.documentElement;
-  doc.classList.add("js");
+  if (!doc.classList.contains("js")) doc.classList.add("js");
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
@@ -35,6 +35,23 @@
     });
   }
 
+  /* ---------- film transition between pages ---------- */
+  if (!reduce) {
+    document.addEventListener("click", function (ev) {
+      if (ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+      var a = ev.target.closest("a[href]");
+      if (!a || a.target === "_blank" || a.hasAttribute("download") || a.getAttribute("href").charAt(0) === "#") return;
+      var url;
+      try { url = new URL(a.href, location.href); } catch (e) { return; }
+      if (url.origin !== location.origin || url.protocol !== location.protocol) return;
+      if (url.pathname === location.pathname && url.search === location.search && url.hash) return;
+      ev.preventDefault();
+      doc.classList.add("leaving");
+      setTimeout(function () { location.href = url.href; }, 520);
+    });
+    window.addEventListener("pageshow", function (ev) { if (ev.persisted) doc.classList.remove("leaving"); });
+  }
+
   /* ---------- scroll reveals ---------- */
   var revealables = document.querySelectorAll(".reveal, .card, .cat-tile, .crit, .deg");
   if (reduce || !("IntersectionObserver" in window)) {
@@ -50,7 +67,7 @@
         io.unobserve(el);
       });
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
-    revealables.forEach(function (el) { io.observe(el); });
+    setTimeout(function () { revealables.forEach(function (el) { io.observe(el); }); }, 250);
   }
 
   /* ---------- parallax on covers and pinned hero fade (GSAP) ---------- */

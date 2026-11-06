@@ -129,6 +129,7 @@ class Site:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add("js")</script>
 <title>{e(full_title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="author" content="Julio Cesar Prava">
@@ -174,6 +175,7 @@ class Site:
 <script>try{{if(localStorage.getItem("rail")==="min")document.documentElement.classList.add("rail-min")}}catch(e){{}}</script>
 <nav id="bvbar" class="bvbar" data-current="curatedai" aria-label="BiblioVerse" style="position:relative;height:44px;z-index:9000;background:linear-gradient(90deg,#4f7cff,#7a5cff)"><a href="https://biblioverse.org" style="color:#fff;line-height:44px;padding:0 14px;font-weight:700;text-decoration:none;font-family:sans-serif">BiblioVerse</a></nav>
 <a class="skip" href="#main">{e(t['skip'])}</a>
+<div class="wipe" id="wipe" aria-hidden="true"><i class="w-top"></i><i class="w-bot"></i></div>
 <div class="cursor" id="cursor" aria-hidden="true"><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span></div>
 <header class="top"><a class="logo" href="{self.href(depth, self.p['home'])}"><span class="logo-a">C<i>urated</i></span><span class="logo-b">.AI</span></a>
 <div class="top-right"><a class="lang" href="{other_href}" hreflang="{other_lang}" lang="{other_lang}">{t['switch']}</a>
