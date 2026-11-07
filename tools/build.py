@@ -11,8 +11,6 @@ from content import UI, CONTACT, COUNTRIES_PT
 SITE = "https://curatedai.biblioverse.org"
 BUILT = datetime.date.today().isoformat()
 import rcssmin, rjsmin
-GSAP = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-SCROLLTRIGGER = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
 LENIS = "https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"
 FONTS = "https://fonts.googleapis.com/css2?family=Ojuju:wght@300;800&family=Tilt+Warp&display=swap"
 
@@ -166,8 +164,6 @@ class Site:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
 <link rel="stylesheet" href="{assets}assets/style.min.css">
-<script src="{GSAP}" defer></script>
-<script src="{SCROLLTRIGGER}" defer></script>
 <script src="{LENIS}" defer></script>
 <script src="{assets}assets/app.min.js" defer></script>
 <script src="https://biblioverse.org/superbar.js" defer></script>

@@ -19,10 +19,6 @@
     lenis = new Lenis({ lerp: 0.09, wheelMultiplier: 1, smoothWheel: true });
     function raf(t) { lenis.raf(t); requestAnimationFrame(raf); }
     requestAnimationFrame(raf);
-    if (window.gsap && window.ScrollTrigger) {
-      gsap.registerPlugin(ScrollTrigger);
-      lenis.on("scroll", ScrollTrigger.update);
-    }
     document.querySelectorAll('a[href^="#"]').forEach(function (a) {
       a.addEventListener("click", function (ev) {
         var id = a.getAttribute("href");
@@ -70,23 +66,15 @@
     setTimeout(function () { revealables.forEach(function (el) { io.observe(el); }); }, 250);
   }
 
-  /* ---------- parallax on covers and pinned hero fade (GSAP) ---------- */
-  if (window.gsap && window.ScrollTrigger && !reduce) {
-    gsap.registerPlugin(ScrollTrigger);
-    var hero = document.querySelector(".hero");
-    if (hero) {
-      gsap.to(".hero-title", { yPercent: -18, opacity: 0.25, ease: "none", scrollTrigger: { trigger: hero, start: "top top", end: "bottom top", scrub: true } });
-      gsap.to(".hero-foot", { yPercent: -10, opacity: 0, ease: "none", scrollTrigger: { trigger: hero, start: "40% top", end: "bottom top", scrub: true } });
-    }
-    document.querySelectorAll(".cover.big").forEach(function (c) {
-      gsap.to(c.querySelector(".s1"), { yPercent: 25, ease: "none", scrollTrigger: { trigger: c, start: "top bottom", end: "bottom top", scrub: true } });
-      gsap.to(c.querySelector(".cv-ini"), { yPercent: -30, ease: "none", scrollTrigger: { trigger: c, start: "top bottom", end: "bottom top", scrub: true } });
-    });
-    var marquee = document.querySelector(".marquee-track");
-    if (marquee) {
-      var dir = 1;
-      ScrollTrigger.create({ onUpdate: function (self) { var d = self.direction; if (d !== dir) { dir = d; marquee.style.animationDirection = d === 1 ? "normal" : "reverse"; } } });
-    }
+  /* ---------- marquee follows the scroll direction ---------- */
+  var marquee = document.querySelector(".marquee-track");
+  if (marquee && !reduce) {
+    var lastY = window.scrollY || 0, dir = 1;
+    window.addEventListener("scroll", function () {
+      var y = window.scrollY || 0, d = y > lastY ? 1 : (y < lastY ? -1 : dir);
+      lastY = y;
+      if (d !== dir) { dir = d; marquee.style.animationDirection = d === 1 ? "normal" : "reverse"; }
+    }, { passive: true });
   }
 
   /* ---------- 3D tilt on cards ---------- */
@@ -147,7 +135,6 @@
       var min = doc.classList.toggle("rail-min");
       label(min);
       try { localStorage.setItem("rail", min ? "min" : "max"); } catch (e) {}
-      if (window.ScrollTrigger) setTimeout(function () { ScrollTrigger.refresh(); }, 650);
     });
   }
   if (rail && hl && fine && !reduce) {
@@ -206,7 +193,6 @@
       var any = !!(active.purpose || active.degree);
       if (clear) clear.hidden = !any;
       if (empty) empty.hidden = n > 0;
-      if (window.ScrollTrigger) ScrollTrigger.refresh();
     }
     filters.addEventListener("click", function (ev) {
       var b = ev.target.closest(".fchip");
