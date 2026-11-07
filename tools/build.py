@@ -1,5 +1,5 @@
 """Gera todo o site: EN na raiz, PT em /pt/. Rode: python tools/build.py"""
-import json, os, sys, html, datetime, hashlib
+import json, os, re, sys, html, datetime, hashlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -21,6 +21,13 @@ for x in PROJECTS:
         assert q in BY_PURPOSE, (x["id"], q)
     for a in x["also"]:
         assert a in BY_CAT and a != x["cat"], (x["id"], a)
+
+def sort_key(title):
+    """Ordem alfabetica ignorando acentos, caixa e artigos iniciais."""
+    import unicodedata
+    s = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"^(the|a|an|o|a|os|as|um|uma)\s+", "", s)
+
 
 ORDER = sorted(PROJECTS, key=lambda x: (-x["year"], x["title"].lower()))
 FEATURED = [x for x in ORDER if x["featured"]]
@@ -71,7 +78,7 @@ class Site:
     def card(self, x, depth, i=None):
         t, c = self.t, BY_CAT[x["cat"]]
         purposes = " ".join(x["purposes"])
-        return (f'<a class="card" href="{self.proj_href(depth, x)}" data-purposes="{purposes}" data-degree="{x["degree"]}" data-cat="{x["cat"]}" data-cursor="view">'
+        return (f'<a class="card" href="{self.proj_href(depth, x)}" data-purposes="{purposes}" data-degree="{x["degree"]}" data-cat="{x["cat"]}" data-title="{e(x["title"])}" data-year="{x["year"]}" data-cursor="view">'
                 f'{cover(x)}<div class="card-body">'
                 f'<div class="card-top"><span class="chip" style="--h:{c["hue"]}">{e(c[self.lang])}</span><span class="card-year">{x["year"]}</span></div>'
                 f'<h3 class="card-title">{e(x["title"])}</h3><p class="card-by">{e(x["by"])}</p>'
@@ -246,8 +253,12 @@ class Site:
 
     def category(self, c):
         t, lang = self.t, self.lang
-        xs = IN_CAT[c["id"]]
+        xs = sorted(IN_CAT[c["id"]], key=lambda x: sort_key(x["title"]))
         cards = "".join(self.card(x, 1) for x in xs) or f'<p class="empty">{e(t["empty"])}</p>'
+        sort = (f'<div class="filters sort" id="sort"><div class="fgroup"><span class="flabel">{e(t["sort"])}</span>'
+                f'<button type="button" class="fchip" data-s="az" aria-pressed="true">{e(t["sortAz"])}</button>'
+                f'<button type="button" class="fchip" data-s="old" aria-pressed="false">{e(t["sortOld"])}</button>'
+                f'<button type="button" class="fchip" data-s="new" aria-pressed="false">{e(t["sortNew"])}</button></div></div>') if xs else ""
         others = "".join(f'<a class="chip lg" href="{self.cat_href(1, o)}" style="--h:{o["hue"]}">{e(o[lang])} <small>{len(IN_CAT[o["id"]])}</small></a>' for o in CATEGORIES if o["id"] != c["id"])
         body = f"""
 <section class="page-hero" style="--h:{c['hue']}">
@@ -255,7 +266,7 @@ class Site:
 <h1 class="page-title"><span class="wi">{e(c[lang])}</span></h1>
 <p class="hero-lead reveal">{e(c['desc'][lang])}</p>
 </section>
-<section class="sec"><h2 class="sr-only">{e(t['projectsHeading'])}</h2><div class="grid">{cards}</div></section>
+<section class="sec"><h2 class="sr-only">{e(t['projectsHeading'])}</h2>{sort}<div class="grid" id="catgrid">{cards}</div></section>
 <section class="sec"><div class="sec-head reveal"><h2>{e(t['categories'])}</h2></div><div class="chips">{others}</div></section>
 """
         rel = f"{self.p['cat']}/{c['id']}.html"
@@ -413,6 +424,13 @@ def main():
         for x in PROJECTS:
             s.project(x)
     images()
+    ids = {x["id"] for x in PROJECTS}
+    for d, pat in (("project", r"^(.*)\.html$"), (os.path.join("pt", "projeto"), r"^(.*)\.html$"), ("og", r"^(.*)-(en|pt)\.png$")):
+        for fn in os.listdir(os.path.join(ROOT, d)):
+            m = re.match(pat, fn)
+            if m and m.group(1) not in ids:
+                os.remove(os.path.join(ROOT, d, fn))
+                print("removido:", d, fn)
     t = UI["en"]
     open(os.path.join(ROOT, "404.html"), "w", encoding="utf8", newline="\n").write(f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 · Curated AI</title><meta name="robots" content="noindex"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link href="{FONTS}" rel="stylesheet"><link rel="stylesheet" href="/assets/style.min.css"></head>

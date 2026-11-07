@@ -18,7 +18,7 @@ UI = {
         featured="Featured", featuredLead="Start here. Six projects that each use AI in a way nobody had before.",
         categories="Categories", categoriesLead="One main category per project: the format of the finished work, as the public meets it.",
         allProjects="All projects", projectsHeading="Projects in this category", allLead="Filter by what the project is for and by how much the machine did.",
-        filterPurpose="Purpose", filterDegree="Degree of AI", filterAll="All", clear="Clear filters", empty="No project matches these filters yet.",
+        filterPurpose="Purpose", filterDegree="Degree of AI", filterAll="All", sort="Order", sortAz="A to Z", sortOld="Oldest first", sortNew="Newest first", clear="Clear filters", empty="No project matches these filters yet.",
         criteria="How we choose", criteriaLead="Three questions. A project needs a good answer to all of them.",
         criteriaItems=[
             ("Is it useful?", "It solves a problem, teaches something, moves someone or entertains on purpose. Being generated is not a reason to exist."),
@@ -43,7 +43,7 @@ UI = {
             ("How to suggest", "Send a link, who made it, which tools were used and where the human came in. Every suggestion is read by a person. Entries marked as seeds were written from public sources and are being reviewed."),
         ],
         privacyTitle="Privacy", privacy="This site has no accounts, no cookies and no trackers. It is static HTML hosted on GitHub Pages, which keeps standard server logs. Nothing else is collected.",
-        footer="Made with AI, curated by humans. A BiblioVerse project.", about_link="About", privacy_link="Privacy",
+        footer="A BiblioVerse project.", about_link="About", privacy_link="Privacy",
         notFound="Not curated.", notFoundText="This page does not exist, or was never good enough to be here.", notFoundCta="Back to the catalogue",
     ),
     "pt": dict(
@@ -63,7 +63,7 @@ UI = {
         featured="Destaques", featuredLead="Comece por aqui. Seis projetos que usam IA de um jeito que ninguém tinha usado antes.",
         categories="Categorias", categoriesLead="Uma categoria principal por projeto: o formato da obra final, como o público a encontra.",
         allProjects="Todos os projetos", projectsHeading="Projetos desta categoria", allLead="Filtre pela finalidade do projeto e por quanto a máquina fez.",
-        filterPurpose="Finalidade", filterDegree="Grau de IA", filterAll="Todos", clear="Limpar filtros", empty="Nenhum projeto corresponde a esses filtros ainda.",
+        filterPurpose="Finalidade", filterDegree="Grau de IA", filterAll="Todos", sort="Ordem", sortAz="A a Z", sortOld="Mais antigos", sortNew="Mais novos", clear="Limpar filtros", empty="Nenhum projeto corresponde a esses filtros ainda.",
         criteria="Como escolhemos", criteriaLead="Três perguntas. Um projeto precisa de uma boa resposta para todas.",
         criteriaItems=[
             ("É útil?", "Resolve um problema, ensina algo, comove alguém ou diverte de propósito. Ter sido gerado não é motivo para existir."),
@@ -88,7 +88,7 @@ UI = {
             ("Como sugerir", "Mande um link, quem fez, quais ferramentas foram usadas e onde entrou o humano. Toda sugestão é lida por uma pessoa. Entradas marcadas como semente foram escritas a partir de fontes públicas e estão em revisão."),
         ],
         privacyTitle="Privacidade", privacy="Este site não tem contas, cookies nem rastreadores. É HTML estático hospedado no GitHub Pages, que mantém logs padrão de servidor. Nada mais é coletado.",
-        footer="Feito com IA, curado por humanos. Um projeto BiblioVerse.", about_link="Sobre", privacy_link="Privacidade",
+        footer="Um projeto BiblioVerse.", about_link="Sobre", privacy_link="Privacidade",
         notFound="Sem curadoria.", notFoundText="Esta página não existe, ou nunca foi boa o bastante para estar aqui.", notFoundCta="Voltar ao catálogo",
     ),
 }

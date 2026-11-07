@@ -62,14 +62,6 @@ WORLD = [
       "O anúncio abraça a estranheza da ferramenta em vez de escondê-la, e o autor publicou o processo inteiro. Um marco de custo, não um modelo de gosto.",
       country="United States"),
     # ---------- music & audio ----------
-    p("elf-tech", "Elf.Tech", 2023, "Grimes", "music", ["entertainment"], "cocreated", ["Elf.Tech (Triniti)"],
-      "Grimes released a tool that turns any recording into her voice and promised fifty percent of royalties to anyone who makes a successful song with it.",
-      "Grimes lançou uma ferramenta que transforma qualquer gravação na voz dela e prometeu cinquenta por cento dos royalties a quem fizer uma música de sucesso com ela.",
-      "The artist chose to open her voice, set the terms, and curated the songs that came back; the fans wrote and sang the material that the model re-voiced.",
-      "A artista escolheu abrir a própria voz, definiu os termos e curou as músicas que voltaram; os fãs escreveram e cantaram o material que o modelo revozeou.",
-      "The opposite of the unauthorised AI Drake track that prompted it: consent, credit and a split, written down before anyone pressed generate.",
-      "O oposto da faixa não autorizada de AI Drake que a motivou: consentimento, crédito e divisão, escritos antes de alguém apertar gerar.",
-      url="https://elf.tech", country="Canada"),
     p("wexton-voice", "Rep. Jennifer Wexton's voice", 2024, "Jennifer Wexton & ElevenLabs", "music", ["public", "activism"], "assisted", ["ElevenLabs voice clone"],
       "A congresswoman who lost her speech to a neurological disease addressed the House of Representatives in a clone of her own voice, built from recordings made before her diagnosis.",
       "Uma deputada que perdeu a fala para uma doença neurológica discursou na Câmara dos Representantes dos Estados Unidos com um clone da própria voz, construído a partir de gravações anteriores ao diagnóstico.",
@@ -122,12 +114,4 @@ WORLD = [
       "Mais um marco que uma obra-prima. Obrigou o mercado de arte a decidir se uma saída escolhida é uma obra, e a disputa de crédito pelo código emprestado faz parte da lição.",
       url="https://www.obvious-art.com", country="France"),
     # ---------- data & science ----------
-    p("graphcast", "GraphCast", 2023, "Google DeepMind", "data", ["science", "public"], "assisted", ["GraphCast (graph neural network)"],
-      "A weather model that produces ten-day global forecasts in under a minute and beat the leading physics-based system on about ninety percent of the measures tested.",
-      "Um modelo meteorológico que produz previsões globais de dez dias em menos de um minuto e superou o principal sistema baseado em física em cerca de noventa por cento das medidas testadas.",
-      "Trained on four decades of reanalysis data from the European weather centre, published in Science with open code, and run alongside traditional forecasts by meteorologists who still make the call.",
-      "Treinado com quatro décadas de dados de reanálise do centro meteorológico europeu, publicado na Science com código aberto e rodado ao lado das previsões tradicionais por meteorologistas que ainda dão a palavra final.",
-      "Useful in the plainest sense: earlier warnings of cyclones and extreme weather. The paper says what it cannot do, and the forecasters keep the responsibility.",
-      "Útil no sentido mais simples: avisos mais cedo de ciclones e tempo extremo. O artigo diz o que o modelo não faz, e os meteorologistas mantêm a responsabilidade.",
-      url="https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/", country="United Kingdom"),
 ]

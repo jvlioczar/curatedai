@@ -175,6 +175,29 @@
   if (scrim) scrim.addEventListener("click", function () { setRail(false); });
   document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") setRail(false); });
 
+  /* ---------- sort (category pages) ---------- */
+  var sortBox = document.getElementById("sort"), catGrid = document.getElementById("catgrid");
+  if (sortBox && catGrid) {
+    var key = function (el) { return el.getAttribute("data-title").toLowerCase().replace(/^(the|an|a|o|os|as|um|uma)\s+/, ""); };
+    var byTitle = function (a, b) { return key(a).localeCompare(key(b), undefined, { sensitivity: "base", ignorePunctuation: true }); };
+    var modes = {
+      az: byTitle,
+      old: function (a, b) { return (+a.getAttribute("data-year") - +b.getAttribute("data-year")) || byTitle(a, b); },
+      "new": function (a, b) { return (+b.getAttribute("data-year") - +a.getAttribute("data-year")) || byTitle(a, b); }
+    };
+    sortBox.addEventListener("click", function (ev) {
+      var b = ev.target.closest(".fchip");
+      if (!b || b.getAttribute("aria-pressed") === "true") return;
+      var mode = b.getAttribute("data-s");
+      sortBox.querySelectorAll(".fchip").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      var items = Array.prototype.slice.call(catGrid.querySelectorAll(".card")).sort(modes[mode]);
+      items.forEach(function (c, i) { c.classList.add("in"); c.style.transitionDelay = "0ms"; catGrid.appendChild(c); });
+      try { history.replaceState(null, "", mode === "az" ? location.pathname : "?sort=" + mode); } catch (e) {}
+    });
+    var want = new URLSearchParams(location.search).get("sort"), pre = want && sortBox.querySelector('.fchip[data-s="' + want + '"]');
+    if (pre) pre.click();
+  }
+
   /* ---------- filters (home) ---------- */
   var filters = document.getElementById("filters"), grid = document.getElementById("allgrid");
   if (filters && grid) {
