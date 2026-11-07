@@ -320,8 +320,9 @@ a.chip:hover { background: var(--ink); color: var(--bg); border-color: var(--ink
 }
 /* scroll-driven parallax (CSS only; browsers without support simply skip it) */
 @supports (animation-timeline: scroll()) {
-  .home .hero-title { animation: hero-out linear both; animation-timeline: scroll(root); animation-range: 0 70vh; }
-  .home .hero-foot { animation: hero-out linear both; animation-timeline: scroll(root); animation-range: 15vh 80vh; }
+  .home .hero { view-timeline: --hero block; }
+  .home .hero-title { animation: hero-out linear both; animation-timeline: --hero; animation-range: exit 0% exit 75%; }
+  .home .hero-foot { animation: hero-out linear both; animation-timeline: --hero; animation-range: exit 10% exit 85%; }
   .cover.big .s1 { animation: cover-shape linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
   .cover.big .cv-ini { animation: cover-ini linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
 }
