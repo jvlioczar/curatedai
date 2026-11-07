@@ -166,7 +166,7 @@ a.chip:hover { background: var(--ink); color: var(--bg); border-color: var(--ink
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 
 /* generated covers: flat tint, one shape, initials */
-.cover { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: hsl(var(--h), 40%, 90%); isolation: isolate; border-bottom: 1px solid var(--line); }
+.cover { position: relative; aspect-ratio: 2 / 1; overflow: hidden; background: hsl(var(--h), 40%, 90%); isolation: isolate; border-bottom: 1px solid var(--line); }
 .cover.big { aspect-ratio: 16 / 11; border: 1px solid var(--line); }
 .cover i { position: absolute; transition: transform 1.1s var(--ease-out); }
 .cover .s1 { width: 62%; aspect-ratio: 1; right: -14%; top: -22%; border-radius: 50%; background: hsl(var(--h), 80%, 54%); }

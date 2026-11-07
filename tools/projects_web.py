@@ -108,4 +108,12 @@ WEB = [
       "Included as a landmark of agent-written software, flaws included. The lesson is in the open code and the public correction.",
       "Incluído como marco do software escrito por agentes, falhas incluídas. A lição está no código aberto e na correção pública.",
       url="https://github.com/permissionlesstech/bitchat", country="United States"),
+    p("mihaela-matei", "Mihaela Matei, portfolio", 2026, "Mihaela Matei", "websites", ["personal", "commercial"], "cocreated", ["Lovable"],
+      "A UI/UX designer's portfolio built on Lovable: a dark, cinematic single page with chapters, kinetic type, a flaming 3D object in the hero and small toys hidden in the text.",
+      "O portfólio de uma designer UI/UX construído no Lovable: uma página única, escura e cinematográfica, com capítulos, tipografia em movimento, um objeto 3D em chamas no hero e brinquedinhos escondidos no texto.",
+      "Matei, a painter by training with fifteen years of visual arts, designed every section and wrote every line; the AI builder turned her direction into code. Her own rule is that strategy and taste stay human and AI only compresses execution.",
+      "Matei, pintora de formação com quinze anos de artes visuais, desenhou cada seção e escreveu cada linha; o construtor de IA transformou a direção dela em código. A regra dela é que estratégia e gosto ficam com o humano, e a IA só comprime a execução.",
+      "Nothing here looks like a template: the structure follows the designer's story, the case studies are real Behance work with their numbers, and the site is listed in Made with Lovable's curated showcase.",
+      "Nada aqui parece template: a estrutura segue a história da designer, os estudos de caso são trabalhos reais do Behance com seus números, e o site está na vitrine curada Made with Lovable.",
+      url="https://mihaelamatei.lovable.app", country="Romania", also=["design"]),
 ]

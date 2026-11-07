@@ -94,6 +94,6 @@ UI = {
 }
 
 COUNTRIES_PT = {"United States": "Estados Unidos", "United Kingdom": "Reino Unido", "Brazil": "Brasil", "Canada": "Canadá", "Netherlands": "Países Baixos",
-                "Australia": "Austrália", "Denmark": "Dinamarca", "New Zealand": "Nova Zelândia", "Italy": "Itália", "Japan": "Japão", "France": "França", "Germany": "Alemanha"}
+                "Australia": "Austrália", "Denmark": "Dinamarca", "New Zealand": "Nova Zelândia", "Italy": "Itália", "Japan": "Japão", "France": "França", "Germany": "Alemanha", "Romania": "Romênia"}
 
 CONTACT = "mailto:juliocesarprava@gmail.com?subject=Curated%20AI"
