@@ -114,6 +114,6 @@ WEB = [
       "Matei, a painter by training with fifteen years of visual arts, designed every section and wrote every line; the AI builder turned her direction into code. Her own rule is that strategy and taste stay human and AI only compresses execution.",
       "Matei, pintora de formação com quinze anos de artes visuais, desenhou cada seção e escreveu cada linha; o construtor de IA transformou a direção dela em código. A regra dela é que estratégia e gosto ficam com o humano, e a IA só comprime a execução.",
       "Nothing here looks like a template: the structure follows the designer's story, the case studies are real Behance work with their numbers, and the site is listed in Made with Lovable's curated showcase.",
-      "Nada aqui parece template: a estrutura segue a história da designer, os estudos de caso são trabalhos reais do Behance com seus números, e o site está na vitrine curada Made with Lovable.",
+      "Nada aqui parece modelo pronto: a estrutura segue a história da designer, os estudos de caso são trabalhos reais do Behance com seus números, e o site está na vitrine curada Made with Lovable.",
       url="https://mihaelamatei.lovable.app", country="Romania", also=["design"]),
 ]

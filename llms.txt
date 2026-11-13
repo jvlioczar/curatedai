@@ -2,9 +2,24 @@
 
 > The greatest AI-assisted projects, curated by humans.
 
-A catalogue of projects that show how to use AI well: useful, innovative, human-reviewed and free of AI slop. Films, music, games, websites, software, design, writing and more.
+Curated AI is a human-curated catalogue of works made with the help of AI that are worth showing as examples: films, music, games, websites, software, design, writing and more. Every entry says where the human came in, why it is not slop and how much the machine did.
 
-## Pages
+- Scope: projects made with the help of AI. Sites about AI, tools that evaluate or block models, and bare models or tools are out of scope.
+- Criteria: a project must be useful, show an innovative use of AI, and have been curated and reviewed by a human.
+- Structure: one main category per project (the format of the finished work), one or more purposes, and a degree of AI.
+- Slop: AI output published without judgement. It is not a style, it is the absence of one.
+- Seed entries were written from public sources and await editorial review; treat their details as provisional.
+- Languages: English at / and Brazilian Portuguese at /pt/. Static HTML with no accounts, cookies or trackers.
+- Publisher: BiblioVerse (https://biblioverse.org).
+
+Three degrees of AI:
+
+- AI-assisted: AI was a support tool. The work would exist without it, just slower.
+- Co-created: Human and AI in dialogue. Neither could have made this alone.
+- Human-directed: AI produced most of the material; a person chose, cut, corrected and signed it.
+
+## Categories
+
 - [Websites & web apps](https://curatedai.biblioverse.org/category/websites.html): Sites, landing pages, online tools and browser experiences where AI did real work and a human shaped the result.
 - [Software & tools](https://curatedai.biblioverse.org/category/software.html): Apps, extensions, scripts, automations and open-source projects built with or around AI.
 - [Games & interactive](https://curatedai.biblioverse.org/category/games.html): Games, interactive fiction, simulators and digital toys where AI is a mechanic, not a gimmick.
@@ -17,64 +32,110 @@ A catalogue of projects that show how to use AI well: useful, innovative, human-
 - [Data & science](https://curatedai.biblioverse.org/category/data.html): Visualizations, datasets, scientific results and maps that only exist because of machine learning.
 - [3D, product & space](https://curatedai.biblioverse.org/category/physical.html): 3D modelling, architecture, fashion, furniture and physical objects designed with AI.
 - [Art & experimental](https://curatedai.biblioverse.org/category/art.html): Generative art, installations, performances and works that take AI itself as their medium.
-- [AI History Timeline](https://curatedai.biblioverse.org/project/ai-history-timeline.html): A free bilingual museum of artificial intelligence, from Ada Lovelace in 1843 to today, with every milestone backed by two press articles, plus a glossary and free courses.
-- [ArtCraft Crafting Apps](https://curatedai.biblioverse.org/project/artcraft.html): Seven free, open-source desktop apps written in Rust to replace Photoshop, Premiere, Lightroom and the rest of Adobe's suite, coded with AI in a matter of days.
-- [Australian Culture](https://curatedai.biblioverse.org/project/australian-culture.html): A guide to understand Australia and Australians: famous Aussies, cities, food, slang dictionary, key dates, brands and curiosities, in English and Portuguese.
-- [Brazilian Culture](https://curatedai.biblioverse.org/project/brazilian-culture.html): A journey to understand Brazil and Brazilians, built for foreigners: people, cities, food, music, dates and curiosities, in English and Portuguese.
-- [GOATs](https://curatedai.biblioverse.org/project/goats.html): Who is the greatest athlete of all time in each sport? GOATs, legends, stars and prospects across more than 300 disciplines, each with sources and a verification level.
-- [Guia de Argumentação](https://curatedai.biblioverse.org/project/guia-de-argumentacao.html): A free course in 151 chapters on how to argue for animals, built from a twelve-volume ethics series and generated as a static site.
-- [Mihaela Matei, portfolio](https://curatedai.biblioverse.org/project/mihaela-matei.html): A UI/UX designer's portfolio built on Lovable: a dark, cinematic single page with chapters, kinetic type, a flaming 3D object in the hero and small toys hidden in the text.
-- [Types of Rock](https://curatedai.biblioverse.org/project/types-of-rock.html): The theory of evolution applied to rock music: 97 genres on an interactive tree with history, sound, genealogy and the greatest artists of each.
-- [Bitchat](https://curatedai.biblioverse.org/project/bitchat.html): A messenger that works with no internet, hopping between phones over Bluetooth, written by Twitter's co-founder in a weekend with an AI coding agent.
-- [El Eternauta](https://curatedai.biblioverse.org/project/el-eternauta.html): The first Netflix original with generative AI in its final footage: a building collapse in Buenos Aires that the show's budget could not have covered the traditional way.
-- [fly.pieter.com](https://curatedai.biblioverse.org/project/fly-pieter.html): A multiplayer flight simulator in the browser, coded almost entirely by prompting, that went viral and sold in-game ads.
-- [Kalshi NBA Finals ad](https://curatedai.biblioverse.org/project/kalshi-nba-finals.html): A deliberately chaotic thirty-second spot generated with Veo 3 for about two thousand dollars of prompting, aired during the 2025 NBA Finals.
-- [The Way of Code](https://curatedai.biblioverse.org/project/the-way-of-code.html): The Tao Te Ching rewritten as eighty-one meditations on vibe coding, each paired with an interactive artwork the reader can remix by prompting.
-- [Whispers from the Star](https://curatedai.biblioverse.org/project/whispers-from-the-star.html): You keep an astronaut named Stella alive on an alien planet by talking to her, by text, voice or video call. There is no quest line; what you say is the game.
-- [Air Head](https://curatedai.biblioverse.org/project/air-head.html): A short film about a man with a balloon for a head, one of the first narrative pieces made with Sora.
-- [Cal AI](https://curatedai.biblioverse.org/project/cal-ai.html): Photograph your plate and the app estimates its calories. Built by two eighteen-year-olds, it passed five million downloads in eight months by the founders' count.
-- [Infinite Craft](https://curatedai.biblioverse.org/project/infinite-craft.html): A browser game where you drag two words together and a language model decides what they become, forever.
-- [Oasis](https://curatedai.biblioverse.org/project/oasis.html): A playable Minecraft-like world with no game engine: every frame is generated by a model from your keyboard and mouse input, in real time.
-- [Pedigree Adoptable](https://curatedai.biblioverse.org/project/pedigree-adoptable.html): A model turns amateur shelter photos into studio-quality portraits, so every Pedigree ad becomes an ad for a real dog waiting in a shelter nearby.
-- [Rep. Jennifer Wexton's voice](https://curatedai.biblioverse.org/project/wexton-voice.html): A congresswoman who lost her speech to a neurological disease addressed the House of Representatives in a clone of her own voice, built from recordings made before her diagnosis.
-- [Sympathy Tower Tokyo](https://curatedai.biblioverse.org/project/sympathy-tower-tokyo.html): The novel that won Japan's Akutagawa Prize, after which its author said about five percent of the text was taken verbatim from ChatGPT.
-- [Be My AI](https://curatedai.biblioverse.org/project/be-my-ai.html): Blind and low-vision users photograph anything and receive a detailed description, with a human volunteer one tap away.
-- [Death of an Author](https://curatedai.biblioverse.org/project/death-of-an-author.html): A murder-mystery novella written with three language models, published by Pushkin Industries with the process in the open.
-- [Khanmigo](https://curatedai.biblioverse.org/project/khanmigo.html): A tutor that refuses to give the answer: it asks questions, hints and checks the student's reasoning instead.
-- [Make Real](https://curatedai.biblioverse.org/project/make-real.html): Draw a rough interface on a whiteboard, press one button, and a working prototype appears next to your sketch, ready to click.
-- [Now and Then](https://curatedai.biblioverse.org/project/now-and-then.html): The last Beatles song, finished from a 1970s John Lennon demo after machine learning separated his voice from the piano.
-- [Suck Up!](https://curatedai.biblioverse.org/project/suck-up.html): You are a vampire who must talk his way into people's homes; every neighbour is a language-model character who can be convinced or offended.
-- [The Frost](https://curatedai.biblioverse.org/project/the-frost.html): A twelve-minute science-fiction film in which every shot started as a DALL·E 2 image, later animated.
-- [Contexto](https://curatedai.biblioverse.org/project/contexto.html): The Brazilian answer to Semantle: guess the secret word by meaning, ranked by a language model, which became the big word game of early 2023 far beyond Brazil.
-- [Google Flood Hub](https://curatedai.biblioverse.org/project/flood-hub.html): A public site with river flood forecasts up to seven days ahead, built for regions without gauges, covering eighty countries since 2023.
-- [Heinz A.I. Ketchup](https://curatedai.biblioverse.org/project/heinz-ai-ketchup.html): Heinz asked an image model to draw ketchup in every style it could think of, and almost every result came back shaped like a Heinz bottle.
-- [Semantle](https://curatedai.biblioverse.org/project/semantle.html): A daily word game where every guess gets a score for how close its meaning is to the secret word, computed by a word-embedding model.
-- [The Crow](https://curatedai.biblioverse.org/project/the-crow.html): A dance performance filmed in a studio and re-painted frame by frame by an image model guided by the prompt of a crow.
-- [The Heart Part 5](https://curatedai.biblioverse.org/project/heart-part-5.html): A single-take music video in which Kendrick Lamar's face morphs into O.J. Simpson, Kanye West, Will Smith, Kobe Bryant and Nipsey Hussle as the verses change perspective.
-- [The Infinite Conversation](https://curatedai.biblioverse.org/project/infinite-conversation.html): An endless, never-repeating conversation between synthetic versions of Werner Herzog and Slavoj Žižek, with a new segment added every day.
-- [Théâtre D'opéra Spatial](https://curatedai.biblioverse.org/project/theatre-dopera-spatial.html): The Midjourney image that won first place in the digital art category of the Colorado State Fair and started the debate about AI in art competitions.
-- [Top Gun: Maverick, Val Kilmer's voice](https://curatedai.biblioverse.org/project/top-gun-maverick-voice.html): Val Kilmer, who lost his speaking voice to throat cancer, returned as Iceman with a synthetic version of his own voice built from old recordings.
-- [Unsupervised](https://curatedai.biblioverse.org/project/unsupervised.html): A wall-sized moving painting at MoMA, generated from the museum's own collection and reacting to light, sound and movement in the lobby.
-- [Zarya of the Dawn](https://curatedai.biblioverse.org/project/zarya-of-the-dawn.html): A short graphic novel whose images were generated with Midjourney and whose text, layout and story were written by its author.
-- [AlphaFold Protein Structure Database](https://curatedai.biblioverse.org/project/alphafold-db.html): Predicted 3D structures for over 200 million proteins, free to anyone, covering nearly every organism with a sequenced genome.
-- [Deep Nostalgia](https://curatedai.biblioverse.org/project/deep-nostalgia.html): Upload an old family photo and the face blinks, turns and smiles. Tens of millions of ancestors were animated in the first weeks.
-- [Lost Tapes of the 27 Club](https://curatedai.biblioverse.org/project/lost-tapes-27-club.html): New songs in the style of Nirvana, Amy Winehouse, Jimi Hendrix and The Doors, generated to talk about mental health in the music industry.
-- [Merlin Bird ID: Sound ID](https://curatedai.biblioverse.org/project/merlin-sound-id.html): Hold up your phone and the app names the birds singing around you, live, even when several sing at once.
-- [Blob Opera](https://curatedai.biblioverse.org/project/blob-opera.html): Four blobs sing opera as you drag them up and down, harmonising in real time with voices learned from sixteen hours of four real singers.
-- [Pharmako-AI](https://curatedai.biblioverse.org/project/pharmako-ai.html): The first book co-written with GPT-3: a dialogue about ecology, memory and consciousness in which both voices are printed.
-- [Unfinished Votes](https://curatedai.biblioverse.org/project/unfinished-votes.html): Joaquin Oliver, killed in the Parkland shooting, appears in a video asking young people to vote for gun reform, made with his parents.
-- [A.I. chair](https://curatedai.biblioverse.org/project/ai-chair.html): A chair designed by asking generative software to hold a body with the least material, then edited by a designer until it looked like a chair.
-- [AI Dungeon](https://curatedai.biblioverse.org/project/ai-dungeon.html): The text adventure that first showed a language model could run an open-ended story with a player.
-- [Dalí Lives](https://curatedai.biblioverse.org/project/dali-lives.html): Visitors to the Dalí Museum in Florida are greeted by a life-size Salvador Dalí who talks about his life and takes a selfie with them.
-- [Malaria Must Die](https://curatedai.biblioverse.org/project/malaria-must-die.html): A campaign video in which David Beckham's lips are synced to nine languages so that survivors' voices speak through him.
-- [PROTO](https://curatedai.biblioverse.org/project/proto.html): An album recorded with Spawn, a neural network Herndon trained on her own voice and on a choir of collaborators.
-- [This Person Does Not Exist](https://curatedai.biblioverse.org/project/this-person-does-not-exist.html): A single page that shows a new photorealistic face on every reload, none of which belongs to a real person.
-- [Portrait of Edmond de Belamy](https://curatedai.biblioverse.org/project/edmond-de-belamy.html): The first AI-generated artwork sold by a major auction house: a blurred portrait signed with the model's loss function, sold at Christie's for 432,500 dollars.
-- [Seek by iNaturalist](https://curatedai.biblioverse.org/project/seek-inaturalist.html): Point the camera at a plant, bug or animal and the app identifies it on the device, with badges for kids and no account required.
-- [Deep Empathy](https://curatedai.biblioverse.org/project/deep-empathy.html): Photos of Boston, London and other cities rendered as if they had suffered the war in Syria, to make distant suffering feel near.
-- [Nutella Unica](https://curatedai.biblioverse.org/project/nutella-unica.html): Seven million jars, each with a unique label generated from a set of patterns and palettes designed by the agency.
-- [Seeing AI](https://curatedai.biblioverse.org/project/seeing-ai.html): A free app that narrates the world for blind users: reads text and documents, recognises people and products, describes scenes and currency.
-- [Quick, Draw!](https://curatedai.biblioverse.org/project/quick-draw.html): A game that asks you to doodle an object in twenty seconds while a neural network guesses what it is, which quietly collected the largest doodle dataset in the world.
-- [Sunspring](https://curatedai.biblioverse.org/project/sunspring.html): A nine-minute film whose screenplay was written entirely by a recurrent neural network and performed straight by human actors.
-- [The Next Rembrandt](https://curatedai.biblioverse.org/project/next-rembrandt.html): A new 'Rembrandt' portrait computed from 346 paintings and printed in 3D to reproduce the brushstroke relief.
-- [About](https://curatedai.biblioverse.org/about.html)
+
+## Websites & web apps
+
+- [Australian Culture](https://curatedai.biblioverse.org/project/australian-culture.html): 2026, Julio Cesar Prava / BiblioVerse. Co-created. A guide to understand Australia and Australians: famous Aussies, cities, food, slang dictionary, key dates, brands and curiosities, in English and Portuguese.
+- [Blob Opera](https://curatedai.biblioverse.org/project/blob-opera.html): 2020, David Li with Google Arts & Culture. Co-created. Four blobs sing opera as you drag them up and down, harmonising in real time with voices learned from sixteen hours of four real singers.
+- [Brazilian Culture](https://curatedai.biblioverse.org/project/brazilian-culture.html): 2026, Julio Cesar Prava / BiblioVerse. Co-created. A journey to understand Brazil and Brazilians, built for foreigners: people, cities, food, music, dates and curiosities, in English and Portuguese.
+- [Contexto](https://curatedai.biblioverse.org/project/contexto.html): 2022, Nildo Junior. Co-created. The Brazilian answer to Semantle: guess the secret word by meaning, ranked by a language model, which became the big word game of early 2023 far beyond Brazil.
+- [GOATs](https://curatedai.biblioverse.org/project/goats.html): 2026, Julio Cesar Prava / BiblioVerse. Co-created. Who is the greatest athlete of all time in each sport? GOATs, legends, stars and prospects across more than 300 disciplines, each with sources and a verification level.
+- [Google Flood Hub](https://curatedai.biblioverse.org/project/flood-hub.html): 2022, Google Research. AI-assisted. A public site with river flood forecasts up to seven days ahead, built for regions without gauges, covering eighty countries since 2023.
+- [The Infinite Conversation](https://curatedai.biblioverse.org/project/infinite-conversation.html): 2022, Giacomo Miceli. Human-directed. An endless, never-repeating conversation between synthetic versions of Werner Herzog and Slavoj Žižek, with a new segment added every day.
+- [Make Real](https://curatedai.biblioverse.org/project/make-real.html): 2023, tldraw. Co-created. Draw a rough interface on a whiteboard, press one button, and a working prototype appears next to your sketch, ready to click.
+- [Mihaela Matei, portfolio](https://curatedai.biblioverse.org/project/mihaela-matei.html): 2026, Mihaela Matei. Co-created. A UI/UX designer's portfolio built on Lovable: a dark, cinematic single page with chapters, kinetic type, a flaming 3D object in the hero and small toys hidden in the text.
+- [Quick, Draw!](https://curatedai.biblioverse.org/project/quick-draw.html): 2016, Google Creative Lab. Co-created. A game that asks you to doodle an object in twenty seconds while a neural network guesses what it is, which quietly collected the largest doodle dataset in the world.
+- [Semantle](https://curatedai.biblioverse.org/project/semantle.html): 2022, David Turner. Co-created. A daily word game where every guess gets a score for how close its meaning is to the secret word, computed by a word-embedding model.
+- [This Person Does Not Exist](https://curatedai.biblioverse.org/project/this-person-does-not-exist.html): 2019, Phillip Wang. Human-directed. A single page that shows a new photorealistic face on every reload, none of which belongs to a real person.
+- [Types of Rock](https://curatedai.biblioverse.org/project/types-of-rock.html): 2026, Julio Cesar Prava / BiblioVerse. Co-created. The theory of evolution applied to rock music: 97 genres on an interactive tree with history, sound, genealogy and the greatest artists of each.
+
+## Software & tools
+
+- [ArtCraft Crafting Apps](https://curatedai.biblioverse.org/project/artcraft.html): 2026, Brandon Thomas / ArtCraft. Human-directed. Seven free, open-source desktop apps written in Rust to replace Photoshop, Premiere, Lightroom and the rest of Adobe's suite, coded with AI in a matter of days.
+- [Be My AI](https://curatedai.biblioverse.org/project/be-my-ai.html): 2023, Be My Eyes & OpenAI. AI-assisted. Blind and low-vision users photograph anything and receive a detailed description, with a human volunteer one tap away.
+- [Bitchat](https://curatedai.biblioverse.org/project/bitchat.html): 2025, Jack Dorsey. Human-directed. A messenger that works with no internet, hopping between phones over Bluetooth, written by Twitter's co-founder in a weekend with an AI coding agent.
+- [Cal AI](https://curatedai.biblioverse.org/project/cal-ai.html): 2024, Zach Yadegari & Henry Langmack. AI-assisted. Photograph your plate and the app estimates its calories. Built by two eighteen-year-olds, it passed five million downloads in eight months by the founders' count.
+- [Deep Nostalgia](https://curatedai.biblioverse.org/project/deep-nostalgia.html): 2021, MyHeritage with D-ID. Human-directed. Upload an old family photo and the face blinks, turns and smiles. Tens of millions of ancestors were animated in the first weeks.
+- [Khanmigo](https://curatedai.biblioverse.org/project/khanmigo.html): 2023, Khan Academy. AI-assisted. A tutor that refuses to give the answer: it asks questions, hints and checks the student's reasoning instead.
+- [Merlin Bird ID: Sound ID](https://curatedai.biblioverse.org/project/merlin-sound-id.html): 2021, Cornell Lab of Ornithology. AI-assisted. Hold up your phone and the app names the birds singing around you, live, even when several sing at once.
+- [Seeing AI](https://curatedai.biblioverse.org/project/seeing-ai.html): 2017, Microsoft (Saqib Shaikh). AI-assisted. A free app that narrates the world for blind users: reads text and documents, recognises people and products, describes scenes and currency.
+- [Seek by iNaturalist](https://curatedai.biblioverse.org/project/seek-inaturalist.html): 2018, iNaturalist (California Academy of Sciences & National Geographic). AI-assisted. Point the camera at a plant, bug or animal and the app identifies it on the device, with badges for kids and no account required.
+
+## Games & interactive
+
+- [AI Dungeon](https://curatedai.biblioverse.org/project/ai-dungeon.html): 2019, Nick Walton / Latitude. Co-created. The text adventure that first showed a language model could run an open-ended story with a player.
+- [fly.pieter.com](https://curatedai.biblioverse.org/project/fly-pieter.html): 2025, Pieter Levels. Human-directed. A multiplayer flight simulator in the browser, coded almost entirely by prompting, that went viral and sold in-game ads.
+- [Infinite Craft](https://curatedai.biblioverse.org/project/infinite-craft.html): 2024, Neal Agarwal. Co-created. A browser game where you drag two words together and a language model decides what they become, forever.
+- [Oasis](https://curatedai.biblioverse.org/project/oasis.html): 2024, Decart & Etched. Human-directed. A playable Minecraft-like world with no game engine: every frame is generated by a model from your keyboard and mouse input, in real time.
+- [Suck Up!](https://curatedai.biblioverse.org/project/suck-up.html): 2023, Proxima. Co-created. You are a vampire who must talk his way into people's homes; every neighbour is a language-model character who can be convinced or offended.
+- [Whispers from the Star](https://curatedai.biblioverse.org/project/whispers-from-the-star.html): 2025, Anuttacon. Co-created. You keep an astronaut named Stella alive on an alien planet by talking to her, by text, voice or video call. There is no quest line; what you say is the game.
+
+## Video & animation
+
+- [Air Head](https://curatedai.biblioverse.org/project/air-head.html): 2024, Shy Kids. Human-directed. A short film about a man with a balloon for a head, one of the first narrative pieces made with Sora.
+- [The Crow](https://curatedai.biblioverse.org/project/the-crow.html): 2022, Glenn Marshall. Co-created. A dance performance filmed in a studio and re-painted frame by frame by an image model guided by the prompt of a crow.
+- [Dalí Lives](https://curatedai.biblioverse.org/project/dali-lives.html): 2019, The Dalí Museum & Goodby Silverstein & Partners. Human-directed. Visitors to the Dalí Museum in Florida are greeted by a life-size Salvador Dalí who talks about his life and takes a selfie with them.
+- [El Eternauta](https://curatedai.biblioverse.org/project/el-eternauta.html): 2025, K&S Films & Netflix, with Eyeline Studios. AI-assisted. The first Netflix original with generative AI in its final footage: a building collapse in Buenos Aires that the show's budget could not have covered the traditional way.
+- [The Frost](https://curatedai.biblioverse.org/project/the-frost.html): 2023, Waymark. Human-directed. A twelve-minute science-fiction film in which every shot started as a DALL·E 2 image, later animated.
+- [The Heart Part 5](https://curatedai.biblioverse.org/project/heart-part-5.html): 2022, Kendrick Lamar & Dave Free, with Deep Voodoo. AI-assisted. A single-take music video in which Kendrick Lamar's face morphs into O.J. Simpson, Kanye West, Will Smith, Kobe Bryant and Nipsey Hussle as the verses change perspective.
+- [Kalshi NBA Finals ad](https://curatedai.biblioverse.org/project/kalshi-nba-finals.html): 2025, PJ Accetturo for Kalshi. Human-directed. A deliberately chaotic thirty-second spot generated with Veo 3 for about two thousand dollars of prompting, aired during the 2025 NBA Finals.
+- [Malaria Must Die](https://curatedai.biblioverse.org/project/malaria-must-die.html): 2019, Malaria No More & Synthesia. AI-assisted. A campaign video in which David Beckham's lips are synced to nine languages so that survivors' voices speak through him.
+- [Top Gun: Maverick, Val Kilmer's voice](https://curatedai.biblioverse.org/project/top-gun-maverick-voice.html): 2022, Sonantic & Val Kilmer. AI-assisted. Val Kilmer, who lost his speaking voice to throat cancer, returned as Iceman with a synthetic version of his own voice built from old recordings.
+- [Unfinished Votes](https://curatedai.biblioverse.org/project/unfinished-votes.html): 2020, Change the Ref & McCann Health. Human-directed. Joaquin Oliver, killed in the Parkland shooting, appears in a video asking young people to vote for gun reform, made with his parents.
+
+## Music & audio
+
+- [Lost Tapes of the 27 Club](https://curatedai.biblioverse.org/project/lost-tapes-27-club.html): 2021, Over the Bridge. Human-directed. New songs in the style of Nirvana, Amy Winehouse, Jimi Hendrix and The Doors, generated to talk about mental health in the music industry.
+- [Now and Then](https://curatedai.biblioverse.org/project/now-and-then.html): 2023, The Beatles. AI-assisted. The last Beatles song, finished from a 1970s John Lennon demo after machine learning separated his voice from the piano.
+- [PROTO](https://curatedai.biblioverse.org/project/proto.html): 2019, Holly Herndon. Co-created. An album recorded with Spawn, a neural network Herndon trained on her own voice and on a choir of collaborators.
+- [Rep. Jennifer Wexton's voice](https://curatedai.biblioverse.org/project/wexton-voice.html): 2024, Jennifer Wexton & ElevenLabs. AI-assisted. A congresswoman who lost her speech to a neurological disease addressed the House of Representatives in a clone of her own voice, built from recordings made before her diagnosis.
+
+## Illustration & image
+
+- [Deep Empathy](https://curatedai.biblioverse.org/project/deep-empathy.html): 2017, MIT Media Lab & UNICEF. Human-directed. Photos of Boston, London and other cities rendered as if they had suffered the war in Syria, to make distant suffering feel near.
+- [Théâtre D'opéra Spatial](https://curatedai.biblioverse.org/project/theatre-dopera-spatial.html): 2022, Jason M. Allen. Human-directed. The Midjourney image that won first place in the digital art category of the Colorado State Fair and started the debate about AI in art competitions.
+- [Zarya of the Dawn](https://curatedai.biblioverse.org/project/zarya-of-the-dawn.html): 2022, Kris Kashtanova. Human-directed. A short graphic novel whose images were generated with Midjourney and whose text, layout and story were written by its author.
+
+## Graphic design & branding
+
+- [Heinz A.I. Ketchup](https://curatedai.biblioverse.org/project/heinz-ai-ketchup.html): 2022, Rethink for Kraft Heinz. Human-directed. Heinz asked an image model to draw ketchup in every style it could think of, and almost every result came back shaped like a Heinz bottle.
+- [The Next Rembrandt](https://curatedai.biblioverse.org/project/next-rembrandt.html): 2016, ING, Microsoft, J. Walter Thompson, TU Delft, Mauritshuis. Human-directed. A new 'Rembrandt' portrait computed from 346 paintings and printed in 3D to reproduce the brushstroke relief.
+- [Nutella Unica](https://curatedai.biblioverse.org/project/nutella-unica.html): 2017, Ogilvy Italia & Ferrero. Human-directed. Seven million jars, each with a unique label generated from a set of patterns and palettes designed by the agency.
+- [Pedigree Adoptable](https://curatedai.biblioverse.org/project/pedigree-adoptable.html): 2024, Colenso BBDO & Nexus Studios for Pedigree. AI-assisted. A model turns amateur shelter photos into studio-quality portraits, so every Pedigree ad becomes an ad for a real dog waiting in a shelter nearby.
+
+## Writing & publishing
+
+- [Death of an Author](https://curatedai.biblioverse.org/project/death-of-an-author.html): 2023, Aidan Marchine (Stephen Marche). Co-created. A murder-mystery novella written with three language models, published by Pushkin Industries with the process in the open.
+- [Pharmako-AI](https://curatedai.biblioverse.org/project/pharmako-ai.html): 2020, K Allado-McDowell. Co-created. The first book co-written with GPT-3: a dialogue about ecology, memory and consciousness in which both voices are printed.
+- [Sympathy Tower Tokyo](https://curatedai.biblioverse.org/project/sympathy-tower-tokyo.html): 2024, Rie Kudan. AI-assisted. The novel that won Japan's Akutagawa Prize, after which its author said about five percent of the text was taken verbatim from ChatGPT.
+- [The Way of Code](https://curatedai.biblioverse.org/project/the-way-of-code.html): 2025, Rick Rubin & Anthropic. Co-created. The Tao Te Ching rewritten as eighty-one meditations on vibe coding, each paired with an interactive artwork the reader can remix by prompting.
+
+## Education & explainers
+
+- [AI History Timeline](https://curatedai.biblioverse.org/project/ai-history-timeline.html): 2026, Julio Cesar Prava / BiblioVerse. Co-created. A free bilingual museum of artificial intelligence, from Ada Lovelace in 1843 to today, with every milestone backed by two press articles, plus a glossary and free courses.
+- [Guia de Argumentação](https://curatedai.biblioverse.org/project/guia-de-argumentacao.html): 2026, Julio Cesar Prava / BiblioVerse. Co-created. A free course in 151 chapters on how to argue for animals, built from a twelve-volume ethics series and generated as a static site.
+
+## Data & science
+
+- [AlphaFold Protein Structure Database](https://curatedai.biblioverse.org/project/alphafold-db.html): 2021, Google DeepMind & EMBL-EBI. AI-assisted. Predicted 3D structures for over 200 million proteins, free to anyone, covering nearly every organism with a sequenced genome.
+
+## 3D, product & space
+
+- [A.I. chair](https://curatedai.biblioverse.org/project/ai-chair.html): 2019, Philippe Starck, Kartell & Autodesk. Co-created. A chair designed by asking generative software to hold a body with the least material, then edited by a designer until it looked like a chair.
+
+## Art & experimental
+
+- [Portrait of Edmond de Belamy](https://curatedai.biblioverse.org/project/edmond-de-belamy.html): 2018, Obvious. Human-directed. The first AI-generated artwork sold by a major auction house: a blurred portrait signed with the model's loss function, sold at Christie's for 432,500 dollars.
+- [Sunspring](https://curatedai.biblioverse.org/project/sunspring.html): 2016, Oscar Sharp & Ross Goodwin. Human-directed. A nine-minute film whose screenplay was written entirely by a recurrent neural network and performed straight by human actors.
+- [Unsupervised](https://curatedai.biblioverse.org/project/unsupervised.html): 2022, Refik Anadol. Co-created. A wall-sized moving painting at MoMA, generated from the museum's own collection and reacting to light, sound and movement in the lobby.
+
+## About
+
+- [About Curated AI](https://curatedai.biblioverse.org/about.html): Why this catalogue exists, how projects are chosen, what counts as slop and how to suggest a project.
+- [How we choose](https://curatedai.biblioverse.org/#criteria): Three questions. A project needs a good answer to all of them.
+
+## Optional
+
+- [Full catalogue in one file](https://curatedai.biblioverse.org/llms-full.txt): Every entry with its summary, where the human came in and why it is not slop.
+- [Portuguese edition](https://curatedai.biblioverse.org/pt/llms.txt)
+- [Sitemap](https://curatedai.biblioverse.org/sitemap.xml)

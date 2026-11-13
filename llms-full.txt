@@ -1,0 +1,1248 @@
+# Curated AI
+
+> The greatest AI-assisted projects, curated by humans.
+
+Curated AI is a human-curated catalogue of works made with the help of AI that are worth showing as examples: films, music, games, websites, software, design, writing and more. Every entry says where the human came in, why it is not slop and how much the machine did.
+
+- Scope: projects made with the help of AI. Sites about AI, tools that evaluate or block models, and bare models or tools are out of scope.
+- Criteria: a project must be useful, show an innovative use of AI, and have been curated and reviewed by a human.
+- Structure: one main category per project (the format of the finished work), one or more purposes, and a degree of AI.
+- Slop: AI output published without judgement. It is not a style, it is the absence of one.
+- Seed entries were written from public sources and await editorial review; treat their details as provisional.
+- Languages: English at / and Brazilian Portuguese at /pt/. Static HTML with no accounts, cookies or trackers.
+- Publisher: BiblioVerse (https://biblioverse.org).
+
+Three degrees of AI:
+
+- AI-assisted: AI was a support tool. The work would exist without it, just slower.
+- Co-created: Human and AI in dialogue. Neither could have made this alone.
+- Human-directed: AI produced most of the material; a person chose, cut, corrected and signed it.
+
+## How we choose
+
+Three questions. A project needs a good answer to all of them.
+
+- **Is it useful?** It solves a problem, teaches something, moves someone or entertains on purpose. Being generated is not a reason to exist.
+- **Is it innovative?** It shows a way of using AI that was not obvious before: as a mechanic, a restoration tool, a collaborator, a microphone.
+- **Is it free of slop?** A person chose, cut, checked and signed it. No default aesthetics, no unreviewed text, no waxy faces nobody looked at twice.
+
+**What is slop?** Slop is AI output published without judgement: the plastic skin, the six-finger hand, the paragraph nobody read, the site that looks like every other site. It is not a style, it is the absence of one. Every project here had a human who said no to the first result.
+
+## About Curated AI
+
+### Why
+
+AI is democratising technical and creative work: illustration, editing, graphic design, animation, web design, music, code. That is good news. The bad news is that without knowledge everything comes out with the same artificial look, and the internet is filling with it. This catalogue collects the best examples of the opposite: projects where AI did real work and a person made it good.
+
+### What gets in
+
+A project needs to be useful, to show an innovative way of using AI, and to have been curated and reviewed by a human rather than generated and published. We care about the result and about the process. An entry that cannot say where the human came in does not get in.
+
+### What stays out
+
+Anything with the default AI aesthetic and nothing else. Deepfakes made without consent. Work that hides how it was made. Projects whose only merit is that a machine produced them.
+
+### Three degrees
+
+Each entry states how much the machine did. AI-assisted: the work would exist without it. Co-created: human and model in dialogue. Human-directed: the model produced most of the material and a person chose, cut and corrected it. None is better than the others; honesty is the point.
+
+### References
+
+The anti-slop criterion owes a debt to the communities that document bad AI work so that it can be recognised: among them the Slop Awwwards and slop.video. We point at the opposite of what they collect.
+
+### How to suggest
+
+Send a link, who made it, which tools were used and where the human came in. Every suggestion is read by a person. Entries marked as seeds were written from public sources and are being reviewed.
+
+## Websites & web apps
+
+Sites, landing pages, online tools and browser experiences where AI did real work and a human shaped the result.
+
+### Australian Culture (2026)
+
+- By: Julio Cesar Prava / BiblioVerse
+- Country: Australia
+- Category: Websites & web apps
+- Also: Education & explainers
+- Purpose: Education, Culture & preservation
+- Degree of AI: Co-created
+- Tools: Claude Code, JavaScript
+- Visit the project: https://australianculture.biblioverse.org
+- Curated AI: https://curatedai.biblioverse.org/project/australian-culture.html
+
+A guide to understand Australia and Australians: famous Aussies, cities, food, slang dictionary, key dates, brands and curiosities, in English and Portuguese.
+
+**Where the human came in:** The author chose the sections and the entries, wrote from the perspective of someone who moved there, and keeps every item in one data file per language so nothing goes live unread.
+
+**Why it is not slop:** A cultural guide with a point of view, not a generated listicle. Each entry links to a reference so the reader can check it.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Blob Opera (2020)
+
+- By: David Li with Google Arts & Culture
+- Country: United Kingdom
+- Category: Websites & web apps
+- Also: Music & audio
+- Purpose: Entertainment, Education
+- Degree of AI: Co-created
+- Tools: Custom neural voice model
+- Visit the project: https://artsandculture.google.com/experiment/blob-opera/AAHWrq360NcGbw
+- Curated AI: https://curatedai.biblioverse.org/project/blob-opera.html
+
+Four blobs sing opera as you drag them up and down, harmonising in real time with voices learned from sixteen hours of four real singers.
+
+**Where the human came in:** Li designed the blobs, the interaction and the harmony rules; the singers were credited and recorded for the purpose; the model only produces what it learned opera sounds like.
+
+**Why it is not slop:** Joyful, instant and honest about what you hear: not the singers, but a machine's idea of them. Still the most played machine-learning toy on the web.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Brazilian Culture (2026)
+
+- By: Julio Cesar Prava / BiblioVerse
+- Country: Brazil
+- Category: Websites & web apps
+- Also: Education & explainers
+- Purpose: Education, Culture & preservation
+- Degree of AI: Co-created
+- Tools: Claude Code, JavaScript
+- Visit the project: https://brazilianculture.biblioverse.org
+- Curated AI: https://curatedai.biblioverse.org/project/brazilian-culture.html
+
+A journey to understand Brazil and Brazilians, built for foreigners: people, cities, food, music, dates and curiosities, in English and Portuguese.
+
+**Where the human came in:** A Brazilian author selected what a foreigner actually needs to know, wrote and reviewed both language versions, and removed sources that did not hold up.
+
+**Why it is not slop:** Local knowledge shaping what the model drafts. The site explains Brazil the way a Brazilian would to a friend, with references.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Contexto (2022)
+
+- By: Nildo Junior
+- Country: Brazil
+- Category: Websites & web apps
+- Also: Games & interactive
+- Purpose: Entertainment
+- Degree of AI: Co-created
+- Tools: Word embeddings
+- Visit the project: https://contexto.me
+- Curated AI: https://curatedai.biblioverse.org/project/contexto.html
+
+The Brazilian answer to Semantle: guess the secret word by meaning, ranked by a language model, which became the big word game of early 2023 far beyond Brazil.
+
+**Where the human came in:** A Brazilian engineer living in Norway wanted the game in Portuguese, rebuilt it with a ranking instead of a score, cleaned the word lists and added the share button that made it spread.
+
+**Why it is not slop:** A better version of someone else's idea, made for a language the original ignored. The ranking is friendlier than the score, and the world adopted it.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### GOATs (2026)
+
+- By: Julio Cesar Prava / BiblioVerse
+- Country: Brazil
+- Category: Websites & web apps
+- Also: Data & science
+- Purpose: Entertainment, Education
+- Degree of AI: Co-created
+- Tools: Claude Code, Python
+- Visit the project: https://goat.biblioverse.org
+- Curated AI: https://curatedai.biblioverse.org/project/goats.html
+
+Who is the greatest athlete of all time in each sport? GOATs, legends, stars and prospects across more than 300 disciplines, each with sources and a verification level.
+
+**Where the human came in:** The author set the tiers and the rules, chose the athletes, and labelled each entry with how well it was checked instead of hiding the uncertainty.
+
+**Why it is not slop:** A ranking site that shows its confidence level on every pick. The opposite of a generated top-ten with no sources.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Google Flood Hub (2022)
+
+- By: Google Research
+- Country: United States
+- Category: Websites & web apps
+- Also: Data & science
+- Purpose: Public utility & accessibility, Science & health
+- Degree of AI: AI-assisted
+- Tools: Flood forecasting models
+- Visit the project: https://sites.research.google/floods/
+- Curated AI: https://curatedai.biblioverse.org/project/flood-hub.html
+
+A public site with river flood forecasts up to seven days ahead, built for regions without gauges, covering eighty countries since 2023.
+
+**Where the human came in:** Hydrologists validated the global model against local data, published the method in Nature, and partnered with agencies and the Red Cross to deliver alerts.
+
+**Why it is not slop:** A warning you can act on, in places that never had one. The site shows uncertainty and the forecasts are checked by people who sign off on them.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### The Infinite Conversation (2022)
+
+- By: Giacomo Miceli
+- Country: Italy
+- Category: Websites & web apps
+- Also: Art & experimental
+- Purpose: Entertainment
+- Degree of AI: Human-directed
+- Tools: Language model, Voice synthesis
+- Visit the project: https://infiniteconversation.com
+- Curated AI: https://curatedai.biblioverse.org/project/infinite-conversation.html
+
+An endless, never-repeating conversation between synthetic versions of Werner Herzog and Slavoj Žižek, with a new segment added every day.
+
+**Where the human came in:** Miceli chose the two voices, built the pipeline, framed the site as a parody and states clearly that nothing said reflects either man's opinions.
+
+**Why it is not slop:** A piece about the plausibility of nonsense, made before the chatbot boom. It works because the audience already expected both men to be hard to follow.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Make Real (2023)
+
+- By: tldraw
+- Country: United Kingdom
+- Category: Websites & web apps
+- Also: Software & tools
+- Purpose: Education, Entertainment
+- Degree of AI: Co-created
+- Tools: GPT-4 with Vision
+- Visit the project: https://makereal.tldraw.com
+- Curated AI: https://curatedai.biblioverse.org/project/make-real.html
+
+Draw a rough interface on a whiteboard, press one button, and a working prototype appears next to your sketch, ready to click.
+
+**Where the human came in:** The tldraw team turned a demo by Figma engineer Sawyer Hood into a product in a week, open-sourced the starter and kept the whiteboard as the authoring tool.
+
+**Why it is not slop:** Drawing stayed the interface. The model fills in the code, the human keeps the pen.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Mihaela Matei, portfolio (2026)
+
+- By: Mihaela Matei
+- Country: Romania
+- Category: Websites & web apps
+- Also: Graphic design & branding
+- Purpose: Personal & memory, Commercial
+- Degree of AI: Co-created
+- Tools: Lovable
+- Visit the project: https://mihaelamatei.lovable.app
+- Curated AI: https://curatedai.biblioverse.org/project/mihaela-matei.html
+
+A UI/UX designer's portfolio built on Lovable: a dark, cinematic single page with chapters, kinetic type, a flaming 3D object in the hero and small toys hidden in the text.
+
+**Where the human came in:** Matei, a painter by training with fifteen years of visual arts, designed every section and wrote every line; the AI builder turned her direction into code. Her own rule is that strategy and taste stay human and AI only compresses execution.
+
+**Why it is not slop:** Nothing here looks like a template: the structure follows the designer's story, the case studies are real Behance work with their numbers, and the site is listed in Made with Lovable's curated showcase.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Quick, Draw! (2016)
+
+- By: Google Creative Lab
+- Country: United States
+- Category: Websites & web apps
+- Also: Games & interactive, Data & science
+- Purpose: Entertainment, Education, Science & health
+- Degree of AI: Co-created
+- Tools: Neural network sketch recognition
+- Visit the project: https://quickdraw.withgoogle.com
+- Curated AI: https://curatedai.biblioverse.org/project/quick-draw.html
+
+A game that asks you to doodle an object in twenty seconds while a neural network guesses what it is, which quietly collected the largest doodle dataset in the world.
+
+**Where the human came in:** The team designed the game, the prompts and the voice, and later released the fifty million drawings openly, with tools to explore them.
+
+**Why it is not slop:** It taught millions what a classifier is without a single explanation, and gave the data back to the public.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Semantle (2022)
+
+- By: David Turner
+- Country: United States
+- Category: Websites & web apps
+- Also: Games & interactive
+- Purpose: Entertainment
+- Degree of AI: Co-created
+- Tools: word2vec
+- Visit the project: https://semantle.com
+- Curated AI: https://curatedai.biblioverse.org/project/semantle.html
+
+A daily word game where every guess gets a score for how close its meaning is to the secret word, computed by a word-embedding model.
+
+**Where the human came in:** Turner built it in a few hours in the wake of Wordle, chose the vocabulary and the scoring, and tuned the difficulty by hand; within months about two hundred thousand people played daily.
+
+**Why it is not slop:** A game that could only exist with a language model, and that uses it for one thing: a number. Nothing generated, nothing to look at, just meaning as a mechanic.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### This Person Does Not Exist (2019)
+
+- By: Phillip Wang
+- Country: United States
+- Category: Websites & web apps
+- Purpose: Education
+- Degree of AI: Human-directed
+- Tools: StyleGAN
+- Visit the project: https://thispersondoesnotexist.com
+- Curated AI: https://curatedai.biblioverse.org/project/this-person-does-not-exist.html
+
+A single page that shows a new photorealistic face on every reload, none of which belongs to a real person.
+
+**Where the human came in:** Wang's contribution is the framing: one face, one sentence, no interface. He made the public understand GANs in a second.
+
+**Why it is not slop:** The site is a demonstration of a risk, built to make it visible. Minimal, honest and still the best explainer of synthetic media.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Types of Rock (2026)
+
+- By: Julio Cesar Prava / BiblioVerse
+- Country: Brazil
+- Category: Websites & web apps
+- Also: Education & explainers
+- Purpose: Education, Entertainment
+- Degree of AI: Co-created
+- Tools: Claude Code, Python
+- Visit the project: https://typesofrock.biblioverse.org
+- Curated AI: https://curatedai.biblioverse.org/project/types-of-rock.html
+
+The theory of evolution applied to rock music: 97 genres on an interactive tree with history, sound, genealogy and the greatest artists of each.
+
+**Where the human came in:** The author defined the structure, the evolutionary metaphor and the rankings, reviewed every genre page and corrected the generated text.
+
+**Why it is not slop:** A static site generated from data files, so every fact lives in one place and is checked by a person before it reaches the page.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## Software & tools
+
+Apps, extensions, scripts, automations and open-source projects built with or around AI.
+
+### ArtCraft Crafting Apps (2026)
+
+- By: Brandon Thomas / ArtCraft
+- Country: United States
+- Category: Software & tools
+- Purpose: Public utility & accessibility, Commercial
+- Degree of AI: Human-directed
+- Tools: Claude Opus 5.5, Rust
+- Visit the project: https://github.com/storytold
+- Curated AI: https://curatedai.biblioverse.org/project/artcraft.html
+
+Seven free, open-source desktop apps written in Rust to replace Photoshop, Premiere, Lightroom and the rest of Adobe's suite, coded with AI in a matter of days.
+
+**Where the human came in:** A developer with fifteen years in the industry chose the scope, the language and the licences, directed the generation app by app and shipped the result on GitHub as early alpha, with no telemetry.
+
+**Why it is not slop:** Honest about being unfinished: the apps are labelled alpha, the code is open for anyone to audit, and the project started a real debate about what AI-written software is worth.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Be My AI (2023)
+
+- By: Be My Eyes & OpenAI
+- Country: Denmark
+- Category: Software & tools
+- Purpose: Public utility & accessibility
+- Degree of AI: AI-assisted
+- Tools: GPT-4 Vision
+- Visit the project: https://www.bemyeyes.com
+- Curated AI: https://curatedai.biblioverse.org/project/be-my-ai.html
+
+Blind and low-vision users photograph anything and receive a detailed description, with a human volunteer one tap away.
+
+**Where the human came in:** Built on a decade-old volunteer network. Users and accessibility experts tested the feature for months before launch, and the human line never went away.
+
+**Why it is not slop:** The AI answers a real need faster than a person can, and admits when a person is needed.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Bitchat (2025)
+
+- By: Jack Dorsey
+- Country: United States
+- Category: Software & tools
+- Purpose: Public utility & accessibility
+- Degree of AI: Human-directed
+- Tools: Goose (Block's AI agent), Bluetooth mesh
+- Visit the project: https://github.com/permissionlesstech/bitchat
+- Curated AI: https://curatedai.biblioverse.org/project/bitchat.html
+
+A messenger that works with no internet, hopping between phones over Bluetooth, written by Twitter's co-founder in a weekend with an AI coding agent.
+
+**Where the human came in:** Dorsey chose the protocol and the no-server design, published the code, and after researchers found security flaws, labelled the app as unreviewed until fixes landed.
+
+**Why it is not slop:** Included as a landmark of agent-written software, flaws included. The lesson is in the open code and the public correction.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Cal AI (2024)
+
+- By: Zach Yadegari & Henry Langmack
+- Country: United States
+- Category: Software & tools
+- Purpose: Commercial, Public utility & accessibility
+- Degree of AI: AI-assisted
+- Tools: Vision model
+- Visit the project: https://www.calai.app
+- Curated AI: https://curatedai.biblioverse.org/project/cal-ai.html
+
+Photograph your plate and the app estimates its calories. Built by two eighteen-year-olds, it passed five million downloads in eight months by the founders' count.
+
+**Where the human came in:** The founders chose a single use case, designed the onboarding and the subscription, and shipped from a hacker house. The revenue figures are theirs, not audited.
+
+**Why it is not slop:** Included as the clearest case of a tiny team turning a model into a product people pay for. The claimed ninety percent accuracy is the thing to question.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Deep Nostalgia (2021)
+
+- By: MyHeritage with D-ID
+- Country: Israel
+- Category: Software & tools
+- Also: Video & animation
+- Purpose: Personal & memory, Entertainment
+- Degree of AI: Human-directed
+- Tools: D-ID face animation
+- Visit the project: https://www.myheritage.com/deep-nostalgia
+- Curated AI: https://curatedai.biblioverse.org/project/deep-nostalgia.html
+
+Upload an old family photo and the face blinks, turns and smiles. Tens of millions of ancestors were animated in the first weeks.
+
+**Where the human came in:** The genealogy company limited it to still photos, blocked speech on purpose to avoid deepfake abuse, and labelled every result as synthetic.
+
+**Why it is not slop:** A deliberately narrow use of face animation, with the guardrails stated up front. It moved people because of what it refused to do.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Khanmigo (2023)
+
+- By: Khan Academy
+- Country: United States
+- Category: Software & tools
+- Also: Education & explainers
+- Purpose: Education
+- Degree of AI: AI-assisted
+- Tools: GPT-4
+- Visit the project: https://www.khanmigo.ai
+- Curated AI: https://curatedai.biblioverse.org/project/khanmigo.html
+
+A tutor that refuses to give the answer: it asks questions, hints and checks the student's reasoning instead.
+
+**Where the human came in:** Khan Academy's teachers wrote the pedagogical rules, tested it in classrooms and kept the whole thing tied to their existing curriculum.
+
+**Why it is not slop:** A chatbot designed around what good teaching is, not around what the model wants to do. Restraint as a feature.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Merlin Bird ID: Sound ID (2021)
+
+- By: Cornell Lab of Ornithology
+- Country: United States
+- Category: Software & tools
+- Purpose: Science & health, Education, Public utility & accessibility
+- Degree of AI: AI-assisted
+- Tools: Spectrogram classifier
+- Visit the project: https://merlin.allaboutbirds.org
+- Curated AI: https://curatedai.biblioverse.org/project/merlin-sound-id.html
+
+Hold up your phone and the app names the birds singing around you, live, even when several sing at once.
+
+**Where the human came in:** Trained on seven hundred and fifty thousand recordings labelled by birdwatchers, with eBird's sightings telling the model which species are plausible where and when.
+
+**Why it is not slop:** A free, scientific tool that turns listening into learning. The data comes from the community and goes back to it.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Seeing AI (2017)
+
+- By: Microsoft (Saqib Shaikh)
+- Country: United States
+- Category: Software & tools
+- Purpose: Public utility & accessibility
+- Degree of AI: AI-assisted
+- Tools: Computer vision, OCR
+- Visit the project: https://www.seeingai.com
+- Curated AI: https://curatedai.biblioverse.org/project/seeing-ai.html
+
+A free app that narrates the world for blind users: reads text and documents, recognises people and products, describes scenes and currency.
+
+**Where the human came in:** Led by an engineer who is blind himself, built with the blind community and refined over years of feedback from daily use.
+
+**Why it is not slop:** Designed by the people who need it, years before chatbots. Still the model for what assistive AI should feel like.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Seek by iNaturalist (2018)
+
+- By: iNaturalist (California Academy of Sciences & National Geographic)
+- Country: United States
+- Category: Software & tools
+- Purpose: Science & health, Education
+- Degree of AI: AI-assisted
+- Tools: Computer vision
+- Visit the project: https://www.inaturalist.org/pages/seek_app
+- Curated AI: https://curatedai.biblioverse.org/project/seek-inaturalist.html
+
+Point the camera at a plant, bug or animal and the app identifies it on the device, with badges for kids and no account required.
+
+**Where the human came in:** The model is trained on observations verified by iNaturalist's community of naturalists, and the app was designed with children's privacy in mind.
+
+**Why it is not slop:** Curiosity rewarded instantly, backed by a real scientific database. A camera that makes you look closer.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## Games & interactive
+
+Games, interactive fiction, simulators and digital toys where AI is a mechanic, not a gimmick.
+
+### AI Dungeon (2019)
+
+- By: Nick Walton / Latitude
+- Country: United States
+- Category: Games & interactive
+- Purpose: Entertainment
+- Degree of AI: Co-created
+- Tools: GPT-2, GPT-3
+- Visit the project: https://aidungeon.com
+- Curated AI: https://curatedai.biblioverse.org/project/ai-dungeon.html
+
+The text adventure that first showed a language model could run an open-ended story with a player.
+
+**Where the human came in:** Walton built the game loop, the memory tricks and the genre prompts that keep the model on track; the community wrote the scenarios.
+
+**Why it is not slop:** A format invented for the technology rather than an old format with AI sprinkled on top.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### fly.pieter.com (2025)
+
+- By: Pieter Levels
+- Country: Netherlands
+- Category: Games & interactive
+- Also: Software & tools, Websites & web apps
+- Purpose: Entertainment
+- Degree of AI: Human-directed
+- Tools: Cursor, Grok, Three.js
+- Visit the project: https://fly.pieter.com
+- Curated AI: https://curatedai.biblioverse.org/project/fly-pieter.html
+
+A multiplayer flight simulator in the browser, coded almost entirely by prompting, that went viral and sold in-game ads.
+
+**Where the human came in:** Levels chose every feature, tested each change live in public, fixed what the models broke and ran the business around it.
+
+**Why it is not slop:** Proof that vibe coding can ship a product if a person with taste stays in the loop. The game is crude on purpose and honest about it.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Infinite Craft (2024)
+
+- By: Neal Agarwal
+- Country: United States
+- Category: Games & interactive
+- Also: Websites & web apps
+- Purpose: Entertainment
+- Degree of AI: Co-created
+- Tools: LLaMA
+- Visit the project: https://neal.fun/infinite-craft/
+- Curated AI: https://curatedai.biblioverse.org/project/infinite-craft.html
+
+A browser game where you drag two words together and a language model decides what they become, forever.
+
+**Where the human came in:** Agarwal designed the loop, the interface and the caching so that every player shares the same discoveries; the model only fills the combinations.
+
+**Why it is not slop:** The AI is the mechanic, not the aesthetic. There is no generated art, just a design idea that only a language model could sustain.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Oasis (2024)
+
+- By: Decart & Etched
+- Country: Israel
+- Category: Games & interactive
+- Purpose: Entertainment, Science & health
+- Degree of AI: Human-directed
+- Tools: Oasis world model
+- Visit the project: https://oasis.decart.ai
+- Curated AI: https://curatedai.biblioverse.org/project/oasis.html
+
+A playable Minecraft-like world with no game engine: every frame is generated by a model from your keyboard and mouse input, in real time.
+
+**Where the human came in:** The teams trained and released the model, published a smaller version openly and were upfront that the world drifts and forgets what is behind you.
+
+**Why it is not slop:** Included as a landmark: the first widely played demo of a game that exists only inside a model. Its instability is the point, and the training data raised fair questions.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Suck Up! (2023)
+
+- By: Proxima
+- Country: United States
+- Category: Games & interactive
+- Purpose: Entertainment
+- Degree of AI: Co-created
+- Tools: LLM dialogue
+- Visit the project: https://www.playsuckup.com
+- Curated AI: https://curatedai.biblioverse.org/project/suck-up.html
+
+You are a vampire who must talk his way into people's homes; every neighbour is a language-model character who can be convinced or offended.
+
+**Where the human came in:** Hand-made characters, art direction, voice and the whole game design are human; the model only improvises the conversations.
+
+**Why it is not slop:** Open-ended dialogue is the whole game, and the comedy comes from the player, not from the model.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Whispers from the Star (2025)
+
+- By: Anuttacon
+- Country: China
+- Category: Games & interactive
+- Purpose: Entertainment
+- Degree of AI: Co-created
+- Tools: Custom LLM, Voice and video calls
+- Curated AI: https://curatedai.biblioverse.org/project/whispers-from-the-star.html
+
+You keep an astronaut named Stella alive on an alien planet by talking to her, by text, voice or video call. There is no quest line; what you say is the game.
+
+**Where the human came in:** The studio founded by the former head of miHoYo wrote Stella's character, world and survival rules; the model improvises inside them.
+
+**Why it is not slop:** A big studio betting a whole game on conversation. Critics asked whether it is a game at all, which is the kind of question a real experiment provokes.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## Video & animation
+
+Short films, music videos, animation, motion design and documentaries directed by people and rendered with AI.
+
+### Air Head (2024)
+
+- By: Shy Kids
+- Country: Canada
+- Category: Video & animation
+- Purpose: Entertainment
+- Degree of AI: Human-directed
+- Tools: OpenAI Sora, After Effects
+- Curated AI: https://curatedai.biblioverse.org/project/air-head.html
+
+A short film about a man with a balloon for a head, one of the first narrative pieces made with Sora.
+
+**Where the human came in:** The Toronto collective wrote the story, directed the generations, and spent most of the time editing, rotoscoping and compositing to hide the model's inconsistencies.
+
+**Why it is not slop:** The premise is built around what the tool cannot do well: a head that is supposed to look wrong. The humour and the pacing are entirely human.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### The Crow (2022)
+
+- By: Glenn Marshall
+- Country: United Kingdom
+- Category: Video & animation
+- Purpose: Entertainment
+- Degree of AI: Co-created
+- Tools: CLIP, VQGAN
+- Curated AI: https://curatedai.biblioverse.org/project/the-crow.html
+
+A dance performance filmed in a studio and re-painted frame by frame by an image model guided by the prompt of a crow.
+
+**Where the human came in:** Marshall chose the source footage, wrote the prompts, tuned the model's strength and selected the final sequence; the dancer's movement carries the piece.
+
+**Why it is not slop:** A real body and a real choreography anchor every frame. The AI adds a painterly layer, it does not replace the performance.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Dalí Lives (2019)
+
+- By: The Dalí Museum & Goodby Silverstein & Partners
+- Country: United States
+- Category: Video & animation
+- Purpose: Education, Culture & preservation
+- Degree of AI: Human-directed
+- Tools: Deepfake (GAN)
+- Visit the project: https://thedali.org
+- Curated AI: https://curatedai.biblioverse.org/project/dali-lives.html
+
+Visitors to the Dalí Museum in Florida are greeted by a life-size Salvador Dalí who talks about his life and takes a selfie with them.
+
+**Where the human came in:** Hours of archive footage were curated, an actor performed the body, and the museum's curators wrote and checked every line Dalí says.
+
+**Why it is not slop:** A deepfake used in the open, with the subject's estate, to teach. The technology serves the museum, not the other way around.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### El Eternauta (2025)
+
+- By: K&S Films & Netflix, with Eyeline Studios
+- Country: Argentina
+- Category: Video & animation
+- Purpose: Entertainment
+- Degree of AI: AI-assisted
+- Tools: Generative video (Eyeline Studios)
+- Curated AI: https://curatedai.biblioverse.org/project/el-eternauta.html
+
+The first Netflix original with generative AI in its final footage: a building collapse in Buenos Aires that the show's budget could not have covered the traditional way.
+
+**Where the human came in:** The Argentine creative team directed the sequence with Netflix's in-house effects group; the rest of the series was shot and finished conventionally.
+
+**Why it is not slop:** Included as a landmark, with the labour debate it started. One shot, disclosed by the company itself, in a series that nobody mistook for slop.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### The Frost (2023)
+
+- By: Waymark
+- Country: United States
+- Category: Video & animation
+- Purpose: Entertainment
+- Degree of AI: Human-directed
+- Tools: DALL·E 2, D-ID
+- Curated AI: https://curatedai.biblioverse.org/project/the-frost.html
+
+A twelve-minute science-fiction film in which every shot started as a DALL·E 2 image, later animated.
+
+**Where the human came in:** A written screenplay, a director choosing among thousands of frames, and an editor giving the stiff characters a deliberate, eerie rhythm.
+
+**Why it is not slop:** Instead of hiding the artificiality, the film uses it as the texture of a frozen world. The limitation becomes style.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### The Heart Part 5 (2022)
+
+- By: Kendrick Lamar & Dave Free, with Deep Voodoo
+- Country: United States
+- Category: Video & animation
+- Also: Music & audio
+- Purpose: Entertainment
+- Degree of AI: AI-assisted
+- Tools: Deepfake (Deep Voodoo)
+- Curated AI: https://curatedai.biblioverse.org/project/heart-part-5.html
+
+A single-take music video in which Kendrick Lamar's face morphs into O.J. Simpson, Kanye West, Will Smith, Kobe Bryant and Nipsey Hussle as the verses change perspective.
+
+**Where the human came in:** Lamar performed every line on camera; the deepfake studio founded by the South Park creators applied the faces; the final verse, written from Nipsey Hussle's point of view, decides who appears when.
+
+**Why it is not slop:** Deepfakes used as a storytelling device by the artist himself, in the open. The technique serves the lyric about identity, not the other way around.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Kalshi NBA Finals ad (2025)
+
+- By: PJ Accetturo for Kalshi
+- Country: United States
+- Category: Video & animation
+- Purpose: Commercial
+- Degree of AI: Human-directed
+- Tools: Google Veo 3, Gemini
+- Curated AI: https://curatedai.biblioverse.org/project/kalshi-nba-finals.html
+
+A deliberately chaotic thirty-second spot generated with Veo 3 for about two thousand dollars of prompting, aired during the 2025 NBA Finals.
+
+**Where the human came in:** A filmmaker wrote the script, turned it into a shot list, ran three to four hundred generations to get fifteen usable clips, and cut them by hand.
+
+**Why it is not slop:** The ad leans into the weirdness of the tool instead of hiding it, and the maker published the whole process. A landmark for cost, not a model for taste.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Malaria Must Die (2019)
+
+- By: Malaria No More & Synthesia
+- Country: United Kingdom
+- Category: Video & animation
+- Purpose: Activism & causes
+- Degree of AI: AI-assisted
+- Tools: Synthesia
+- Visit the project: https://malariamustdie.com
+- Curated AI: https://curatedai.biblioverse.org/project/malaria-must-die.html
+
+A campaign video in which David Beckham's lips are synced to nine languages so that survivors' voices speak through him.
+
+**Where the human came in:** Real survivors recorded the messages; Beckham recorded on camera; the campaign disclosed the technique in the launch.
+
+**Why it is not slop:** Synthetic media used to pass the microphone, not to put words in someone's mouth.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Top Gun: Maverick, Val Kilmer's voice (2022)
+
+- By: Sonantic & Val Kilmer
+- Country: United States
+- Category: Video & animation
+- Also: Music & audio
+- Purpose: Entertainment
+- Degree of AI: AI-assisted
+- Tools: Sonantic voice model
+- Curated AI: https://curatedai.biblioverse.org/project/top-gun-maverick-voice.html
+
+Val Kilmer, who lost his speaking voice to throat cancer, returned as Iceman with a synthetic version of his own voice built from old recordings.
+
+**Where the human came in:** Kilmer and his family worked with the company on the model, and the scene was written so that most of the exchange happens in writing, with the voice used for a few lines.
+
+**Why it is not slop:** A voice clone made with the actor, for the actor. Restraint in how much it is used is what keeps it moving.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Unfinished Votes (2020)
+
+- By: Change the Ref & McCann Health
+- Country: United States
+- Category: Video & animation
+- Purpose: Activism & causes
+- Degree of AI: Human-directed
+- Tools: Deepfake (face and voice)
+- Visit the project: https://changetheref.org
+- Curated AI: https://curatedai.biblioverse.org/project/unfinished-votes.html
+
+Joaquin Oliver, killed in the Parkland shooting, appears in a video asking young people to vote for gun reform, made with his parents.
+
+**Where the human came in:** His parents wrote the message, approved every frame and chose to make the synthetic nature of the video explicit.
+
+**Why it is not slop:** The hardest ethical case in the catalogue, included because consent, authorship and purpose were handled in the open.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## Music & audio
+
+Songs, podcasts, sound design, voice and restoration work where AI served the ear.
+
+### Lost Tapes of the 27 Club (2021)
+
+- By: Over the Bridge
+- Country: Canada
+- Category: Music & audio
+- Purpose: Activism & causes
+- Degree of AI: Human-directed
+- Tools: Magenta
+- Visit the project: https://losttapesofthe27club.com
+- Curated AI: https://curatedai.biblioverse.org/project/lost-tapes-27-club.html
+
+New songs in the style of Nirvana, Amy Winehouse, Jimi Hendrix and The Doors, generated to talk about mental health in the music industry.
+
+**Where the human came in:** Musicians selected the usable fragments from hundreds of outputs, arranged and performed them, and human vocalists sang the songs.
+
+**Why it is not slop:** The imitation is the argument: these artists should still be alive to write their own songs. The campaign is about the absence, not the output.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Now and Then (2023)
+
+- By: The Beatles
+- Country: United Kingdom
+- Category: Music & audio
+- Purpose: Entertainment, Culture & preservation
+- Degree of AI: AI-assisted
+- Tools: MAL (stem separation)
+- Visit the project: https://www.thebeatles.com
+- Curated AI: https://curatedai.biblioverse.org/project/now-and-then.html
+
+The last Beatles song, finished from a 1970s John Lennon demo after machine learning separated his voice from the piano.
+
+**Where the human came in:** Nothing was generated. Paul McCartney and Ringo Starr recorded new parts, George Harrison's 1995 guitar was kept, and Giles Martin produced the mix.
+
+**Why it is not slop:** AI as a restoration tool, used only to recover something that already existed. The clearest case of technology serving the work.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### PROTO (2019)
+
+- By: Holly Herndon
+- Country: United States
+- Category: Music & audio
+- Purpose: Entertainment
+- Degree of AI: Co-created
+- Tools: Spawn (custom neural network)
+- Visit the project: https://www.hollyherndon.com
+- Curated AI: https://curatedai.biblioverse.org/project/proto.html
+
+An album recorded with Spawn, a neural network Herndon trained on her own voice and on a choir of collaborators.
+
+**Where the human came in:** Herndon built and trained the model with Mat Dryhurst and Jules LaPlace, wrote the songs, and treated Spawn as one more voice in an ensemble.
+
+**Why it is not slop:** The training data is consensual and the model is a collaborator with a credited role. The record sounds like nothing else.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Rep. Jennifer Wexton's voice (2024)
+
+- By: Jennifer Wexton & ElevenLabs
+- Country: United States
+- Category: Music & audio
+- Purpose: Public utility & accessibility, Activism & causes
+- Degree of AI: AI-assisted
+- Tools: ElevenLabs voice clone
+- Curated AI: https://curatedai.biblioverse.org/project/wexton-voice.html
+
+A congresswoman who lost her speech to a neurological disease addressed the House of Representatives in a clone of her own voice, built from recordings made before her diagnosis.
+
+**Where the human came in:** Wexton's office supplied more than an hour of her old speeches, she approved the model and wrote the words; the clone only reads them.
+
+**Why it is not slop:** Voice cloning as accessibility, used by the person whose voice it is, in the most public room in the country.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## Illustration & image
+
+Illustration, comics, concept art, photography and image series with a visible authorial hand.
+
+### Deep Empathy (2017)
+
+- By: MIT Media Lab & UNICEF
+- Country: United States
+- Category: Illustration & image
+- Purpose: Activism & causes
+- Degree of AI: Human-directed
+- Tools: Neural style transfer
+- Visit the project: https://www.media.mit.edu/projects/deep-empathy/overview/
+- Curated AI: https://curatedai.biblioverse.org/project/deep-empathy.html
+
+Photos of Boston, London and other cities rendered as if they had suffered the war in Syria, to make distant suffering feel near.
+
+**Where the human came in:** Researchers chose the source images with UNICEF and tested whether the transformed pictures actually increased empathy before publishing.
+
+**Why it is not slop:** Image generation with a measured goal and a measured result. The pictures exist to move people toward a cause, and were tested for it.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Théâtre D'opéra Spatial (2022)
+
+- By: Jason M. Allen
+- Country: United States
+- Category: Illustration & image
+- Purpose: Entertainment
+- Degree of AI: Human-directed
+- Tools: Midjourney, Photoshop, Gigapixel
+- Curated AI: https://curatedai.biblioverse.org/project/theatre-dopera-spatial.html
+
+The Midjourney image that won first place in the digital art category of the Colorado State Fair and started the debate about AI in art competitions.
+
+**Where the human came in:** Allen reports more than 900 prompt iterations, selection among hundreds of outputs, Photoshop retouching and upscaling before printing on canvas.
+
+**Why it is not slop:** Included as a landmark, not as a model. It shows how much iteration sits behind a single frame, and how little the law recognises that.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Zarya of the Dawn (2022)
+
+- By: Kris Kashtanova
+- Country: United States
+- Category: Illustration & image
+- Purpose: Entertainment
+- Degree of AI: Human-directed
+- Tools: Midjourney
+- Curated AI: https://curatedai.biblioverse.org/project/zarya-of-the-dawn.html
+
+A short graphic novel whose images were generated with Midjourney and whose text, layout and story were written by its author.
+
+**Where the human came in:** Kashtanova wrote the story, chose and arranged hundreds of images, and edited them into panels. The US Copyright Office protected the text and arrangement, not the images.
+
+**Why it is not slop:** The case that drew the line between generated material and authored work. The comic is readable, personal and clear about how it was made.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## Graphic design & branding
+
+Identities, posters, typography, packaging and editorial design that used AI as a studio tool.
+
+### Heinz A.I. Ketchup (2022)
+
+- By: Rethink for Kraft Heinz
+- Country: Canada
+- Category: Graphic design & branding
+- Purpose: Commercial
+- Degree of AI: Human-directed
+- Tools: DALL·E 2
+- Curated AI: https://curatedai.biblioverse.org/project/heinz-ai-ketchup.html
+
+Heinz asked an image model to draw ketchup in every style it could think of, and almost every result came back shaped like a Heinz bottle.
+
+**Where the human came in:** The agency chose the prompts, curated the outputs and framed the whole thing as a continuation of its earlier campaign in which people were asked to draw ketchup.
+
+**Why it is not slop:** One of the first ad campaigns to use image generation as the idea rather than the decoration. The joke only works because the brand already owned the shape.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### The Next Rembrandt (2016)
+
+- By: ING, Microsoft, J. Walter Thompson, TU Delft, Mauritshuis
+- Country: Netherlands
+- Category: Graphic design & branding
+- Also: Art & experimental, 3D, product & space
+- Purpose: Culture & preservation, Education
+- Degree of AI: Human-directed
+- Tools: Deep learning, 3D printing
+- Curated AI: https://curatedai.biblioverse.org/project/next-rembrandt.html
+
+A new 'Rembrandt' portrait computed from 346 paintings and printed in 3D to reproduce the brushstroke relief.
+
+**Where the human came in:** Art historians chose the subject, the pose and the lighting; data scientists built the model; a team printed thirteen layers of ink to match the surface.
+
+**Why it is not slop:** An early and careful study of a master's style, framed as research, with the museum in the room.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Nutella Unica (2017)
+
+- By: Ogilvy Italia & Ferrero
+- Country: Italy
+- Category: Graphic design & branding
+- Purpose: Commercial
+- Degree of AI: Human-directed
+- Tools: Generative algorithm
+- Curated AI: https://curatedai.biblioverse.org/project/nutella-unica.html
+
+Seven million jars, each with a unique label generated from a set of patterns and palettes designed by the agency.
+
+**Where the human came in:** Designers drew the graphic vocabulary and the rules; the algorithm only combined them. Every jar still looks like Nutella.
+
+**Why it is not slop:** Generative design in service of a brand system. Variety without losing identity, which is what most AI design fails at.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Pedigree Adoptable (2024)
+
+- By: Colenso BBDO & Nexus Studios for Pedigree
+- Country: New Zealand
+- Category: Graphic design & branding
+- Also: Illustration & image
+- Purpose: Activism & causes, Commercial
+- Degree of AI: AI-assisted
+- Tools: Custom image model
+- Visit the project: https://nexusstudios.com/insight/pedigree-ai-cannes-lions-grand-prix-2024/
+- Curated AI: https://curatedai.biblioverse.org/project/pedigree-adoptable.html
+
+A model turns amateur shelter photos into studio-quality portraits, so every Pedigree ad becomes an ad for a real dog waiting in a shelter nearby.
+
+**Where the human came in:** Shelter staff photographed the dogs, the agency built the pipeline and the local ad placement, and each ad linked to that dog's adoption page. Cannes Lions gave it the Outdoor Grand Prix in 2024.
+
+**Why it is not slop:** The AI is a photographer's assistant for animals that could not afford one. According to the campaign, half of the featured dogs were adopted within two weeks.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## Writing & publishing
+
+Books, zines, newsletters, journalism, scripts and poetry co-written and edited by humans.
+
+### Death of an Author (2023)
+
+- By: Aidan Marchine (Stephen Marche)
+- Country: Canada
+- Category: Writing & publishing
+- Purpose: Entertainment
+- Degree of AI: Co-created
+- Tools: ChatGPT, Sudowrite, Cohere
+- Curated AI: https://curatedai.biblioverse.org/project/death-of-an-author.html
+
+A murder-mystery novella written with three language models, published by Pushkin Industries with the process in the open.
+
+**Where the human came in:** Marche wrote the plot, the prompts and the final edit, and says about 95% of the words are machine-generated under his direction.
+
+**Why it is not slop:** A novel about AI authorship that is itself an experiment in AI authorship, with the author's name and method on the cover.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Pharmako-AI (2020)
+
+- By: K Allado-McDowell
+- Country: United States
+- Category: Writing & publishing
+- Purpose: Entertainment
+- Degree of AI: Co-created
+- Tools: GPT-3
+- Curated AI: https://curatedai.biblioverse.org/project/pharmako-ai.html
+
+The first book co-written with GPT-3: a dialogue about ecology, memory and consciousness in which both voices are printed.
+
+**Where the human came in:** Allado-McDowell wrote half of every exchange, chose what to keep and gave the book its arc; the model's text is typeset differently and never edited.
+
+**Why it is not slop:** Transparent by design. The reader always knows who is speaking, and the book is about that boundary.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Sympathy Tower Tokyo (2024)
+
+- By: Rie Kudan
+- Country: Japan
+- Category: Writing & publishing
+- Purpose: Entertainment
+- Degree of AI: AI-assisted
+- Tools: ChatGPT
+- Curated AI: https://curatedai.biblioverse.org/project/sympathy-tower-tokyo.html
+
+The novel that won Japan's Akutagawa Prize, after which its author said about five percent of the text was taken verbatim from ChatGPT.
+
+**Where the human came in:** Kudan wrote a book about a society that leans on AI and used the model's replies as the voice of that society; the judges called the novel practically flawless.
+
+**Why it is not slop:** The machine's text is in the book because the book is about the machine. Disclosed by the author at the ceremony, not discovered later.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### The Way of Code (2025)
+
+- By: Rick Rubin & Anthropic
+- Country: United States
+- Category: Writing & publishing
+- Also: Websites & web apps
+- Purpose: Education, Entertainment
+- Degree of AI: Co-created
+- Tools: Claude
+- Visit the project: https://www.thewayofcode.com
+- Curated AI: https://curatedai.biblioverse.org/project/the-way-of-code.html
+
+The Tao Te Ching rewritten as eighty-one meditations on vibe coding, each paired with an interactive artwork the reader can remix by prompting.
+
+**Where the human came in:** Rubin adapted the text; Claude generated the interactive pieces under his direction; the site lets the reader change them, which is the argument of the book.
+
+**Why it is not slop:** A producer famous for removing things applies the same taste to code. The book is about the posture, not the prompts.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## Education & explainers
+
+Courses, interactive explainers, tutors and reference works that teach better because of AI.
+
+### AI History Timeline (2026)
+
+- By: Julio Cesar Prava / BiblioVerse
+- Country: Brazil
+- Category: Education & explainers
+- Also: Websites & web apps, Data & science
+- Purpose: Education
+- Degree of AI: Co-created
+- Tools: Claude Code, Python
+- Visit the project: https://aihistory.biblioverse.org
+- Curated AI: https://curatedai.biblioverse.org/project/ai-history-timeline.html
+
+A free bilingual museum of artificial intelligence, from Ada Lovelace in 1843 to today, with every milestone backed by two press articles, plus a glossary and free courses.
+
+**Where the human came in:** The author chose the milestones, found and checked the two press sources for each, and directed the editorial poster look from a reference image.
+
+**Why it is not slop:** A history of AI that refuses to take AI's word for it: every date points to journalism a reader can open.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Guia de Argumentação (2026)
+
+- By: Julio Cesar Prava / BiblioVerse
+- Country: Brazil
+- Category: Education & explainers
+- Also: Websites & web apps
+- Purpose: Education, Activism & causes
+- Degree of AI: Co-created
+- Tools: Claude Code, Python
+- Visit the project: https://pelosanimais.biblioverse.org
+- Curated AI: https://curatedai.biblioverse.org/project/guia-de-argumentacao.html
+
+A free course in 151 chapters on how to argue for animals, built from a twelve-volume ethics series and generated as a static site.
+
+**Where the human came in:** Every chapter was reviewed against the sources, claim by claim; analogies were checked and dissenting views named.
+
+**Why it is not slop:** The AI organised and drafted; a person verified. The site states its sources and its review process.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## Data & science
+
+Visualizations, datasets, scientific results and maps that only exist because of machine learning.
+
+### AlphaFold Protein Structure Database (2021)
+
+- By: Google DeepMind & EMBL-EBI
+- Country: United Kingdom
+- Category: Data & science
+- Purpose: Science & health, Public utility & accessibility
+- Degree of AI: AI-assisted
+- Tools: AlphaFold 2
+- Visit the project: https://alphafold.ebi.ac.uk
+- Curated AI: https://curatedai.biblioverse.org/project/alphafold-db.html
+
+Predicted 3D structures for over 200 million proteins, free to anyone, covering nearly every organism with a sequenced genome.
+
+**Where the human came in:** Decades of experimental structures trained the model; EMBL-EBI curates, hosts and labels each prediction with its confidence score.
+
+**Why it is not slop:** Every result carries an honest uncertainty measure. The most useful AI output ever published, and it says where it might be wrong.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## 3D, product & space
+
+3D modelling, architecture, fashion, furniture and physical objects designed with AI.
+
+### A.I. chair (2019)
+
+- By: Philippe Starck, Kartell & Autodesk
+- Country: Italy
+- Category: 3D, product & space
+- Purpose: Commercial
+- Degree of AI: Co-created
+- Tools: Autodesk generative design
+- Curated AI: https://curatedai.biblioverse.org/project/ai-chair.html
+
+A chair designed by asking generative software to hold a body with the least material, then edited by a designer until it looked like a chair.
+
+**Where the human came in:** Starck set the constraints and rejected rounds of proposals; Kartell's engineers made it mouldable in recycled thermoplastic.
+
+**Why it is not slop:** A real product in stores, with a visible dialogue between the algorithm's logic and a designer's taste.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+## Art & experimental
+
+Generative art, installations, performances and works that take AI itself as their medium.
+
+### Portrait of Edmond de Belamy (2018)
+
+- By: Obvious
+- Country: France
+- Category: Art & experimental
+- Purpose: Entertainment
+- Degree of AI: Human-directed
+- Tools: GAN
+- Visit the project: https://www.obvious-art.com
+- Curated AI: https://curatedai.biblioverse.org/project/edmond-de-belamy.html
+
+The first AI-generated artwork sold by a major auction house: a blurred portrait signed with the model's loss function, sold at Christie's for 432,500 dollars.
+
+**Where the human came in:** The Paris collective trained the network on fifteen thousand portraits, chose this output, printed and framed it, and wrote the fictional Belamy family around it.
+
+**Why it is not slop:** A landmark more than a masterpiece. It forced the art market to decide whether a chosen output is a work, and the credit dispute over the borrowed code is part of the lesson.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Sunspring (2016)
+
+- By: Oscar Sharp & Ross Goodwin
+- Country: United States
+- Category: Art & experimental
+- Also: Video & animation
+- Purpose: Entertainment
+- Degree of AI: Human-directed
+- Tools: LSTM (Benjamin)
+- Curated AI: https://curatedai.biblioverse.org/project/sunspring.html
+
+A nine-minute film whose screenplay was written entirely by a recurrent neural network and performed straight by human actors.
+
+**Where the human came in:** Goodwin trained the model on sci-fi scripts; Sharp directed; Thomas Middleditch and the cast gave the nonsense emotional sense.
+
+**Why it is not slop:** A deliberate experiment with the machine's incoherence, made before the hype, and still funnier than most AI films since.
+
+_Seed entry: written from public sources and awaiting editorial review._
+
+### Unsupervised (2022)
+
+- By: Refik Anadol
+- Country: United States
+- Category: Art & experimental
+- Purpose: Entertainment, Culture & preservation
+- Degree of AI: Co-created
+- Tools: Custom GAN, StyleGAN
+- Visit the project: https://refikanadol.com
+- Curated AI: https://curatedai.biblioverse.org/project/unsupervised.html
+
+A wall-sized moving painting at MoMA, generated from the museum's own collection and reacting to light, sound and movement in the lobby.
+
+**Where the human came in:** Anadol's studio curated the dataset with the museum, built the pipeline, and composed the rhythm and palette of the piece over months of iteration.
+
+**Why it is not slop:** An AI artwork about the archive it was trained on, shown by the institution that owns the archive. The data has a face.
+
+_Seed entry: written from public sources and awaiting editorial review._

@@ -22,6 +22,15 @@ for x in PROJECTS:
     for a in x["also"]:
         assert a in BY_CAT and a != x["cat"], (x["id"], a)
 
+ORG_ID = "https://biblioverse.org/#organization"
+
+
+def item_list(site, list_id, name, xs):
+    """ItemList do schema.org com os projetos na ordem em que aparecem na pagina."""
+    return {"@type": "ItemList", "@id": list_id, "name": name, "numberOfItems": len(xs),
+            "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": x["title"], "url": site.canon(f"{site.p['proj']}/{x['id']}.html")} for i, x in enumerate(xs)]}
+
+
 def sort_key(title):
     """Ordem alfabetica ignorando acentos, caixa e artigos iniciais."""
     import unicodedata
@@ -103,10 +112,13 @@ class Site:
                 f'<p class="rail-label">{e(t["categories"])}</p><ul class="rail-cats">{items}</ul>'
                 f'<div class="rail-foot"><a href="https://biblioverse.org">BiblioVerse</a></div></div></aside>')
 
-    def write(self, rel, other, depth, title, desc, body, cur_cat="", crumbs=None, home=False, og=None, about=None):
+    def canon(self, rel):
+        return f"{SITE}/{'' if self.lang == 'en' else 'pt/'}{rel}".replace("index.html", "")
+
+    def write(self, rel, other, depth, title, desc, body, cur_cat="", crumbs=None, home=False, og=None, ptype=None, main=None, extra=(), mentions=()):
         lang, t = self.lang, self.t
         prefix = "" if lang == "en" else "pt/"
-        canonical = f"{SITE}/{prefix}{rel}".replace("index.html", "")
+        canonical = self.canon(rel)
         other_url = f"{SITE}/{'pt/' if lang == 'en' else ''}{other}".replace("index.html", "")
         pt_url, en_url = (canonical, other_url) if lang == "pt" else (other_url, canonical)
         assets = "../" * (depth + (1 if lang == "pt" else 0))
@@ -115,14 +127,22 @@ class Site:
         og = f"{SITE}/{og}" if og else f"{SITE}/og-image{'-en' if lang == 'en' else ''}.png"
         home_url = SITE + "/" + prefix
         n = len(PROJECTS)
-        graph = [{"@type": "CollectionPage" if home else "WebPage", "@id": canonical + "#page", "name": title, "headline": title, "description": desc, "url": canonical, "image": og,
-                  "inLanguage": t["html"], "dateModified": BUILT, "isPartOf": {"@id": home_url + "#website"},
-                  "author": {"@type": "Person", "name": "Julio Cesar Prava"}, "publisher": {"@type": "Organization", "name": "BiblioVerse", "url": "https://biblioverse.org"}},
-                 {"@type": "WebSite", "@id": home_url + "#website", "name": t["site"], "url": home_url, "inLanguage": t["html"], "description": t["homeDesc"].format(n=n)}]
-        if about:
-            graph[0]["about"] = about
+        page = {"@type": ptype or "WebPage", "@id": canonical + "#page", "name": title, "headline": title, "description": desc, "url": canonical, "image": og,
+                "primaryImageOfPage": {"@type": "ImageObject", "url": og, "width": 1200, "height": 630},
+                "inLanguage": t["html"], "dateModified": BUILT, "isPartOf": {"@id": home_url + "#website"},
+                "author": {"@type": "Person", "name": "Julio Cesar Prava"}, "publisher": {"@id": ORG_ID}}
+        graph = [page,
+                 {"@type": "WebSite", "@id": home_url + "#website", "name": t["site"], "url": home_url, "inLanguage": t["html"], "description": t["homeDesc"].format(n=n), "publisher": {"@id": ORG_ID}},
+                 {"@type": "Organization", "@id": ORG_ID, "name": "BiblioVerse", "url": "https://biblioverse.org"}]
+        if main:
+            page["mainEntity"] = {"@id": main["@id"]}
+            graph.append(main)
+        if mentions:
+            page["mentions"] = [{"@id": i} for i in mentions]
+        graph += list(extra)
         if crumbs:
-            graph.append({"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": nm, "item": u} for i, (nm, u) in enumerate(crumbs)]})
+            page["breadcrumb"] = {"@id": canonical + "#breadcrumb"}
+            graph.append({"@type": "BreadcrumbList", "@id": canonical + "#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": nm, "item": u} for i, (nm, u) in enumerate(crumbs)]})
         ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
         full_title = title if title.startswith(t["site"]) else f"{title} · {t['site']}"
         other_lang = "en" if lang == "pt" else "pt-BR"
@@ -166,6 +186,7 @@ class Site:
 <link rel="icon" href="{assets}favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="{assets}apple-touch-icon.png">
 <link rel="manifest" href="{assets}site.webmanifest">
+<link rel="alternate" type="text/markdown" href="{SITE}/{prefix}llms.txt" title="llms.txt">
 <script type="application/ld+json">{ld}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -177,7 +198,7 @@ class Site:
 </head>
 <body class="{'home' if home else 'inner'}">
 <script>try{{if(localStorage.getItem("rail")==="min")document.documentElement.classList.add("rail-min")}}catch(e){{}}</script>
-<nav id="bvbar" class="bvbar" data-current="curatedai" aria-label="BiblioVerse" style="position:relative;height:44px;z-index:9000;background:linear-gradient(90deg,#4f7cff,#7a5cff)"><a href="https://biblioverse.org" style="color:#fff;line-height:44px;padding:0 14px;font-weight:700;text-decoration:none;font-family:sans-serif">BiblioVerse</a></nav>
+<nav id="bvbar" class="bvbar" data-current="curatedai" aria-label="BiblioVerse" style="position:relative;height:36px;z-index:9000;background:linear-gradient(90deg,#4f7cff,#7a5cff)"><a href="https://biblioverse.org" style="color:#fff;line-height:36px;padding:0 14px;font-weight:700;text-decoration:none;font-family:sans-serif">BiblioVerse</a></nav>
 <a class="skip" href="#main">{e(t['skip'])}</a>
 <div class="wipe" id="wipe" aria-hidden="true"><i class="w-top"></i><i class="w-bot"></i></div>
 <div class="cursor" id="cursor" aria-hidden="true"><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><span class="tr"></span><i class="cur-dot"><b></b></i></div>
@@ -249,7 +270,12 @@ class Site:
 <h2>{e(t['submit'])}</h2><p>{e(t['submitText'])}</p><a class="btn pri" href="{CONTACT}" data-cursor="small">{e(t['submitCta'])}</a>
 </section>
 """
-        self.write("index.html", "index.html", 0, t["homeTitle"], t["homeDesc"].format(n=n), body, home=True)
+        hu = self.canon("index.html")
+        degrees = {"@type": "DefinedTermSet", "@id": hu + "#degrees", "name": t["degrees"], "description": t["degreesLead"],
+                   "hasDefinedTerm": [{"@type": "DefinedTerm", "@id": f"{hu}#degree-{d['id']}", "name": d[lang], "description": d["desc"][lang], "termCode": d["id"], "inDefinedTermSet": {"@id": hu + "#degrees"}} for d in DEGREES]}
+        slop = {"@type": "DefinedTerm", "@id": hu + "#slop", "name": "Slop", "description": t["slopText"]}
+        self.write("index.html", "index.html", 0, t["homeTitle"], t["homeDesc"].format(n=n), body, home=True, ptype="CollectionPage",
+                   main=item_list(self, hu + "#projects", t["allProjects"], ORDER), extra=[degrees, slop], mentions=[hu + "#degrees", hu + "#slop"])
 
     def category(self, c):
         t, lang = self.t, self.lang
@@ -273,7 +299,8 @@ class Site:
         other = f"{PATHS['pt' if lang == 'en' else 'en']['cat']}/{c['id']}.html"
         home_url = SITE + ("/pt/" if lang == "pt" else "/")
         crumbs = [(t["nav"]["home"], home_url), (c[lang], f"{SITE}/{'pt/' if lang == 'pt' else ''}{rel}")]
-        self.write(rel, other, 1, c[lang], c["desc"][lang], body, cur_cat=c["id"], crumbs=crumbs)
+        self.write(rel, other, 1, c[lang], c["desc"][lang], body, cur_cat=c["id"], crumbs=crumbs, ptype="CollectionPage",
+                   main=item_list(self, self.canon(rel) + "#projects", c[lang], xs) if xs else None)
 
     def project(self, x):
         t, lang = self.t, self.lang
@@ -314,10 +341,15 @@ class Site:
         home_url = SITE + ("/pt/" if lang == "pt" else "/")
         crumbs = [(t["nav"]["home"], home_url), (c[lang], f"{SITE}/{'pt/' if lang == 'pt' else ''}{self.p['cat']}/{c['id']}.html"), (x["title"], f"{SITE}/{'pt/' if lang == 'pt' else ''}{rel}")]
         desc = f"{x['summary'][lang]} {t['human']}: {x['human'][lang]}"
-        about = {"@type": "CreativeWork", "name": x["title"], "dateCreated": str(x["year"]), "creator": {"@type": "Organization", "name": x["by"]}, "inLanguage": t["html"]}
+        work = {"@type": "CreativeWork", "@id": self.canon(rel) + "#work", "name": x["title"], "description": x["summary"][lang], "dateCreated": str(x["year"]), "creditText": x["by"],
+                "genre": c[lang], "mainEntityOfPage": {"@id": self.canon(rel) + "#page"},
+                "keywords": [{"@type": "DefinedTerm", "@id": f"{home_url}#degree-{d['id']}", "name": d[lang], "description": d["desc"][lang]}]
+                            + [BY_PURPOSE[q][lang] for q in x["purposes"]] + list(x["tools"])}
+        if x["country"]:
+            work["countryOfOrigin"] = {"@type": "Country", "name": country}
         if x["url"]:
-            about["url"] = x["url"]
-        self.write(rel, other, 1, f"{x['title']} · {c[lang]}", desc[:300], body, cur_cat=c["id"], crumbs=crumbs, og=f"og/{x['id']}-{lang}.png", about=about)
+            work["url"] = x["url"]
+        self.write(rel, other, 1, f"{x['title']} · {c[lang]}", desc[:300], body, cur_cat=c["id"], crumbs=crumbs, og=f"og/{x['id']}-{lang}.png", ptype="ItemPage", main=work)
 
     def about(self):
         t = self.t
@@ -333,7 +365,7 @@ class Site:
 <p class="reveal"><a class="btn pri" href="{CONTACT}" data-cursor="small">{e(t['submitCta'])}</a></p>
 </div>
 """
-        self.write(self.p["about"], PATHS["pt" if self.lang == "en" else "en"]["about"], 0, t["aboutTitle"], t["aboutDesc"], body)
+        self.write(self.p["about"], PATHS["pt" if self.lang == "en" else "en"]["about"], 0, t["aboutTitle"], t["aboutDesc"], body, ptype="AboutPage")
 
 
 def images():
@@ -413,6 +445,50 @@ def minify():
     open(os.path.join(ROOT, "assets", "app.min.js"), "w", encoding="utf8", newline="\n").write(rjsmin.jsmin(js))
 
 
+def llms():
+    """llms.txt (indice) e llms-full.txt (conteudo completo), EN na raiz e PT em /pt/, no formato de llmstxt.org."""
+    for lang in ("en", "pt"):
+        t, p, pre = UI[lang], PATHS[lang], ("pt/" if lang == "pt" else "")
+        base, other = f"{SITE}/{pre}", f"{SITE}/{'' if lang == 'pt' else 'pt/'}"
+        head = [f"# {t['site']}", "", f"> {t['tagline']}", "", t["llmsIntro"], ""] + [f"- {f}" for f in t["llmsFacts"]]
+        head += ["", f"{t['degrees']}:", ""] + [f"- {d[lang]}: {d['desc'][lang]}" for d in DEGREES]
+        cats = [(c, sorted(IN_CAT[c["id"]], key=lambda x: sort_key(x["title"]))) for c in CATEGORIES]
+
+        idx = head + ["", f"## {t['categories']}", ""]
+        idx += [f"- [{c[lang]}]({base}{p['cat']}/{c['id']}.html): {c['desc'][lang]}" for c, _ in cats]
+        for c, xs in cats:
+            if xs:
+                idx += ["", f"## {c[lang]}", ""]
+                idx += [f"- [{x['title']}]({base}{p['proj']}/{x['id']}.html): {x['year']}, {x['by']}. {BY_DEGREE[x['degree']][lang]}. {x['summary'][lang]}" for x in xs]
+        idx += ["", f"## {t['nav']['about']}", "",
+                f"- [{t['aboutTitle']}]({base}{p['about']}): {t['aboutDesc']}",
+                f"- [{t['criteria']}]({base}#criteria): {t['criteriaLead']}",
+                "", "## Optional", "",
+                f"- [{t['llmsFull']}]({base}llms-full.txt): {t['llmsFullDesc']}",
+                f"- [{t['llmsOther']}]({other}llms.txt)",
+                f"- [Sitemap]({SITE}/sitemap.xml)"]
+
+        full = head + ["", f"## {t['criteria']}", "", t["criteriaLead"], ""] + [f"- **{q}** {a}" for q, a in t["criteriaItems"]]
+        full += ["", f"**{t['slopTitle']}** {t['slopText']}", "", f"## {t['aboutTitle']}"]
+        for h, b in t["about"]:
+            full += ["", f"### {h}", "", b]
+        for c, xs in cats:
+            if not xs:
+                continue
+            full += ["", f"## {c[lang]}", "", c["desc"][lang]]
+            for x in xs:
+                country = COUNTRIES_PT.get(x["country"], x["country"]) if lang == "pt" else x["country"]
+                rows = [(t["by"], x["by"]), (t["country"], country), (t["category"], c[lang]), (t["also"], ", ".join(BY_CAT[a][lang] for a in x["also"])),
+                        (t["purposes"], ", ".join(BY_PURPOSE[q][lang] for q in x["purposes"])), (t["degree"], BY_DEGREE[x["degree"]][lang]),
+                        (t["tools"], ", ".join(x["tools"])), (t["visit"], x["url"]), (t["site"], f"{base}{p['proj']}/{x['id']}.html")]
+                full += ["", f"### {x['title']} ({x['year']})", ""] + [f"- {k}: {v}" for k, v in rows if v]
+                full += ["", x["summary"][lang], "", f"**{t['human']}:** {x['human'][lang]}", "", f"**{t['notslop']}:** {x['notslop'][lang]}"]
+                if x["status"] == "seed":
+                    full += ["", f"_{t['seedNote']}_"]
+        for name, lines in (("llms.txt", idx), ("llms-full.txt", full)):
+            open(os.path.join(ROOT, pre, name), "w", encoding="utf8", newline="\n").write("\n".join(lines) + "\n")
+
+
 def main():
     minify()
     for lang in ("en", "pt"):
@@ -446,10 +522,7 @@ def main():
     json.dump({"name": "Curated AI", "short_name": "Curated AI", "start_url": "/", "display": "standalone", "background_color": "#ebebed", "theme_color": "#ebebed",
                "icons": [{"src": "/icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png"}, {"src": "/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]},
               open(os.path.join(ROOT, "site.webmanifest"), "w", encoding="utf8"), indent=1)
-    open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf8", newline="\n").write(
-        f"# Curated AI\n\n> {UI['en']['tagline']}\n\n{UI['en']['homeDesc'].format(n=len(PROJECTS))}\n\n## Pages\n" +
-        "".join(f"- [{c['en']}]({SITE}/category/{c['id']}.html): {c['desc']['en']}\n" for c in CATEGORIES) +
-        "".join(f"- [{x['title']}]({SITE}/project/{x['id']}.html): {x['summary']['en']}\n" for x in ORDER) + f"- [About]({SITE}/about.html)\n")
+    llms()
     print(f"{len(PROJECTS)} projetos, {len(CATEGORIES)} categorias, {len(urls)} URLs")
 
 
