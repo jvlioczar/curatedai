@@ -314,7 +314,7 @@ class Site:
         dl = "".join(f'<div class="m"><dt>{e(k)}</dt><dd>{e(v)}</dd></div>' for k, v in meta if v)
         related = [r for r in IN_CAT[x["cat"]] if r["id"] != x["id"]][:3]
         rel_html = "".join(self.card(r, 1) for r in related)
-        visit = f'<a class="btn pri" href="{e(x["url"])}" rel="noopener" data-cursor="small">{e(t["visit"])} ↗</a>' if x["url"] else ""
+        visit = f'<a class="btn pri" href="{e(x["url"])}" target="_blank" rel="noopener" data-cursor="small">{e(t["visit"])} <span aria-hidden="true">↗</span><span class="sr-only"> ({e(t["newTab"])})</span></a>' if x["url"] else ""
         seed = f'<p class="seed">{e(t["seedNote"])}</p>' if x["status"] == "seed" else ""
         body = f"""
 <article class="project">
